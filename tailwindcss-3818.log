@@ -1,0 +1,750 @@
+2025-06-12T16:29:45.501573Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2025-06-12T16:29:45.501663Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/anthonysmith/Desktop/Projects/astro-ai-landing", pattern: "**/*", negated: false }
+2025-06-12T16:29:45.501855Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2025-06-12T16:29:45.501861Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/anthonysmith/Desktop/Projects/astro-ai-landing" }
+2025-06-12T16:29:45.503212Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.506280Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.506337Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:29:45.506353Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/README.md"
+2025-06-12T16:29:45.506364Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tailwind.config.mjs"
+2025-06-12T16:29:45.506376Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1388.PNG"
+2025-06-12T16:29:45.506402Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.506431Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/og-image.svg"
+2025-06-12T16:29:45.506455Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.506491Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/favicon.svg"
+2025-06-12T16:29:45.506514Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:29:45.506525Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1389.PNG"
+2025-06-12T16:29:45.506549Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.507527Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/astro.config.mjs"
+2025-06-12T16:29:45.507543Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/README.md"
+2025-06-12T16:29:45.507567Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.507685Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public/favicon.svg"
+2025-06-12T16:29:45.507702Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/package.json"
+2025-06-12T16:29:45.507712Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/tsconfig.json"
+2025-06-12T16:29:45.507735Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.507755Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/extensions.json"
+2025-06-12T16:29:45.507766Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/launch.json"
+2025-06-12T16:29:45.507789Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.507828Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.507847Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components/Welcome.astro"
+2025-06-12T16:29:45.507869Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.507886Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts/Layout.astro"
+2025-06-12T16:29:45.507908Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.507925Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/background.svg"
+2025-06-12T16:29:45.507934Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/astro.svg"
+2025-06-12T16:29:45.507955Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.507972Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages/index.astro"
+2025-06-12T16:29:45.508009Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tsconfig.json"
+2025-06-12T16:29:45.508029Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.508046Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/extensions.json"
+2025-06-12T16:29:45.508055Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/launch.json"
+2025-06-12T16:29:45.508076Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.508104Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.508121Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles/global.css"
+2025-06-12T16:29:45.508141Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.508158Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Hero.astro"
+2025-06-12T16:29:45.508167Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Welcome.astro"
+2025-06-12T16:29:45.508175Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Footer.astro"
+2025-06-12T16:29:45.508183Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/CTA.astro"
+2025-06-12T16:29:45.508192Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/HowItWorks.astro"
+2025-06-12T16:29:45.508200Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Pricing.astro"
+2025-06-12T16:29:45.508208Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Features.astro"
+2025-06-12T16:29:45.508222Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Testimonials.astro"
+2025-06-12T16:29:45.508230Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Header.astro"
+2025-06-12T16:29:45.508251Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.508267Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts/Layout.astro"
+2025-06-12T16:29:45.508288Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.508303Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/background.svg"
+2025-06-12T16:29:45.508311Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/astro.svg"
+2025-06-12T16:29:45.508331Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.508346Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages/index.astro"
+2025-06-12T16:29:45.508389Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.508394Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.508397Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.508399Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 36 file(s)
+2025-06-12T16:29:45.508734Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/README.md"
+2025-06-12T16:29:45.508756Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/extensions.json"
+2025-06-12T16:29:45.508737Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:29:45.508734Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/astro.svg"
+2025-06-12T16:29:45.508859Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/package.json"
+2025-06-12T16:29:45.509030Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/launch.json"
+2025-06-12T16:29:45.509044Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public/favicon.svg"
+2025-06-12T16:29:45.509061Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components/Welcome.astro"
+2025-06-12T16:29:45.509096Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/background.svg"
+2025-06-12T16:29:45.509106Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts/Layout.astro"
+2025-06-12T16:29:45.509333Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/README.md"
+2025-06-12T16:29:45.509435Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tailwind.config.mjs"
+2025-06-12T16:29:45.509472Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages/index.astro"
+2025-06-12T16:29:45.509500Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/tsconfig.json"
+2025-06-12T16:29:45.509512Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/launch.json"
+2025-06-12T16:29:45.509511Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/astro.config.mjs"
+2025-06-12T16:29:45.509546Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/og-image.svg"
+2025-06-12T16:29:45.509584Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:29:45.509632Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/favicon.svg"
+2025-06-12T16:29:45.509653Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Welcome.astro"
+2025-06-12T16:29:45.509721Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/HowItWorks.astro"
+2025-06-12T16:29:45.509735Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Hero.astro"
+2025-06-12T16:29:45.509751Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts/Layout.astro"
+2025-06-12T16:29:45.509762Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/background.svg"
+2025-06-12T16:29:45.509770Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/extensions.json"
+2025-06-12T16:29:45.509790Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Testimonials.astro"
+2025-06-12T16:29:45.509800Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1388.PNG"
+2025-06-12T16:29:45.509820Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1389.PNG"
+2025-06-12T16:29:45.509832Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages/index.astro"
+2025-06-12T16:29:45.509874Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Header.astro"
+2025-06-12T16:29:45.509895Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Features.astro"
+2025-06-12T16:29:45.509857Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Footer.astro"
+2025-06-12T16:29:45.509914Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/astro.svg"
+2025-06-12T16:29:45.509907Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Pricing.astro"
+2025-06-12T16:29:45.509837Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tsconfig.json"
+2025-06-12T16:29:45.509951Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/CTA.astro"
+2025-06-12T16:29:45.510008Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.510013Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.510016Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.511266Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.511277Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.511281Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.511283Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:29:45.511319Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles/global.css"
+2025-06-12T16:29:45.511334Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.511337Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.511340Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.511442Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.511446Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.511695Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.512137Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.512141Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.512527Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.512576Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.512605Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.512657Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.512809Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.512851Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.512883Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.512905Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.512933Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.512959Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.512990Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.513030Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.513059Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.513079Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.513106Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.513161Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.513185Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.513214Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.513250Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.513401Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.513646Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.513649Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.513895Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.513934Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.513958Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.514002Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.514139Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.514175Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.514205Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.514224Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.514249Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.514273Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.514300Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.514335Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.514361Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.514379Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.514403Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.514457Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.514479Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.514505Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.514538Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.516623Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.644705Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2025-06-12T16:29:45.644727Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/anthonysmith/Desktop/Projects/astro-ai-landing", pattern: "**/*", negated: false }
+2025-06-12T16:29:45.644756Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2025-06-12T16:29:45.644760Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/anthonysmith/Desktop/Projects/astro-ai-landing" }
+2025-06-12T16:29:45.644787Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.645157Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.645197Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:29:45.645208Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/README.md"
+2025-06-12T16:29:45.645218Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tailwind.config.mjs"
+2025-06-12T16:29:45.645227Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1388.PNG"
+2025-06-12T16:29:45.645243Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.645263Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/og-image.svg"
+2025-06-12T16:29:45.645279Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.645304Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/favicon.svg"
+2025-06-12T16:29:45.645324Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:29:45.645333Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1389.PNG"
+2025-06-12T16:29:45.645348Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.645516Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/astro.config.mjs"
+2025-06-12T16:29:45.645526Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/README.md"
+2025-06-12T16:29:45.645542Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.645560Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public/favicon.svg"
+2025-06-12T16:29:45.645574Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/package.json"
+2025-06-12T16:29:45.645583Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/tsconfig.json"
+2025-06-12T16:29:45.645597Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.645614Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/extensions.json"
+2025-06-12T16:29:45.645624Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/launch.json"
+2025-06-12T16:29:45.645640Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.645662Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.645682Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components/Welcome.astro"
+2025-06-12T16:29:45.645700Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.645717Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts/Layout.astro"
+2025-06-12T16:29:45.645737Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.645754Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/background.svg"
+2025-06-12T16:29:45.645763Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/astro.svg"
+2025-06-12T16:29:45.645778Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.645794Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages/index.astro"
+2025-06-12T16:29:45.645815Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tsconfig.json"
+2025-06-12T16:29:45.645829Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.645844Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/extensions.json"
+2025-06-12T16:29:45.645852Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/launch.json"
+2025-06-12T16:29:45.645867Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.645888Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.645905Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles/global.css"
+2025-06-12T16:29:45.645920Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.645936Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Hero.astro"
+2025-06-12T16:29:45.645945Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Welcome.astro"
+2025-06-12T16:29:45.645953Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Footer.astro"
+2025-06-12T16:29:45.645960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/CTA.astro"
+2025-06-12T16:29:45.645970Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/HowItWorks.astro"
+2025-06-12T16:29:45.645978Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Pricing.astro"
+2025-06-12T16:29:45.645985Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Features.astro"
+2025-06-12T16:29:45.645993Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Testimonials.astro"
+2025-06-12T16:29:45.646001Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Header.astro"
+2025-06-12T16:29:45.646016Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.646030Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts/Layout.astro"
+2025-06-12T16:29:45.646051Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.646066Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/background.svg"
+2025-06-12T16:29:45.646074Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/astro.svg"
+2025-06-12T16:29:45.646089Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.646103Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages/index.astro"
+2025-06-12T16:29:45.646132Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.646136Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.646138Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.646140Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 36 file(s)
+2025-06-12T16:29:45.646186Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/README.md"
+2025-06-12T16:29:45.646202Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tailwind.config.mjs"
+2025-06-12T16:29:45.646207Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/README.md"
+2025-06-12T16:29:45.646243Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/extensions.json"
+2025-06-12T16:29:45.646207Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public/favicon.svg"
+2025-06-12T16:29:45.646279Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode/launch.json"
+2025-06-12T16:29:45.646246Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1388.PNG"
+2025-06-12T16:29:45.646235Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components/Welcome.astro"
+2025-06-12T16:29:45.646341Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/og-image.svg"
+2025-06-12T16:29:45.646284Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/HowItWorks.astro"
+2025-06-12T16:29:45.646366Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/background.svg"
+2025-06-12T16:29:45.646237Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/package.json"
+2025-06-12T16:29:45.646317Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Features.astro"
+2025-06-12T16:29:45.646395Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Pricing.astro"
+2025-06-12T16:29:45.646317Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets/astro.svg"
+2025-06-12T16:29:45.646323Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/launch.json"
+2025-06-12T16:29:45.646407Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Testimonials.astro"
+2025-06-12T16:29:45.646329Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:29:45.646426Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages/index.astro"
+2025-06-12T16:29:45.646297Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts/Layout.astro"
+2025-06-12T16:29:45.646393Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Footer.astro"
+2025-06-12T16:29:45.646453Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts/Layout.astro"
+2025-06-12T16:29:45.646393Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/tsconfig.json"
+2025-06-12T16:29:45.646426Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:29:45.646426Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Hero.astro"
+2025-06-12T16:29:45.646517Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/astro.config.mjs"
+2025-06-12T16:29:45.646279Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Header.astro"
+2025-06-12T16:29:45.646363Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/Welcome.astro"
+2025-06-12T16:29:45.646534Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/IMG_1389.PNG"
+2025-06-12T16:29:45.646474Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components/CTA.astro"
+2025-06-12T16:29:45.646474Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode/extensions.json"
+2025-06-12T16:29:45.646477Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/astro.svg"
+2025-06-12T16:29:45.646483Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets/background.svg"
+2025-06-12T16:29:45.646517Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages/index.astro"
+2025-06-12T16:29:45.646442Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/tsconfig.json"
+2025-06-12T16:29:45.646363Z  INFO tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/favicon.svg"
+2025-06-12T16:29:45.646731Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.646735Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.646738Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.647643Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.647650Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.647653Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.647655Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:29:45.647689Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles/global.css"
+2025-06-12T16:29:45.647694Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.647697Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.647700Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.647805Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.647809Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.648056Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.648344Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.648349Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.648704Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.648745Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.648773Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.648823Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.649054Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.649106Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.649143Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.649168Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.649200Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.649227Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.649259Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.649300Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.649330Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.649352Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.649379Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.649436Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.649460Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.649490Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.649573Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.649691Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.649886Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.649952Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.650343Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.650394Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.650424Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.650486Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.650762Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.650804Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.650836Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.650859Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.650886Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.650913Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.650945Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.650985Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.651014Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.651035Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.651060Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.651116Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.651139Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.651167Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.651207Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.652981Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.682802Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.683337Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.683394Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.683428Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.683484Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.683661Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.683706Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.683742Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.683766Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.683841Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.683885Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.683923Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.683969Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.684002Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.684024Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.684053Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.684115Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.684141Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.684170Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.684212Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.684216Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684219Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684221Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-06-12T16:29:45.684224Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.684226Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684228Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684231Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.684233Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.684236Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.684442Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684446Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.684726Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:29:45.684766Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:29:45.684792Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:29:45.684841Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:29:45.684981Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:29:45.685019Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:29:45.685263Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:29:45.685389Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:29:45.685425Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:29:45.685451Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:29:45.685482Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:29:45.685522Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:29:45.685550Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:29:45.685570Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:29:45.685596Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:29:45.685651Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:29:45.685675Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:29:45.685702Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:29:45.685740Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.685845Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:29:45.685894Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:29:45.685898Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.873735Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.875221Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:28.875313Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:28.875348Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:28.875391Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:28.875428Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:28.875949Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:28.876094Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:28.876134Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:28.876164Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:28.876203Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:28.876239Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:28.876283Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:28.876342Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:28.876380Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:28.876408Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:28.876444Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:28.876512Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:28.876542Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:28.876580Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:28.876623Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.876629Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.876633Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.876635Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:30:28.876649Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:28.876654Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.876657Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.876659Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.876774Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.876783Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.876834Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.877051Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.877056Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.877379Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:28.877424Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:28.877453Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:28.877504Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:28.877661Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:28.877703Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:28.877734Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:28.877755Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:28.877781Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:28.877806Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:28.877842Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:28.877886Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:28.877918Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:28.877940Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:28.877967Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:28.878022Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:28.878047Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:28.878075Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:28.878111Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.878199Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:28.878248Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:28.878253Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.280064Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.281527Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:35.281830Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:35.282012Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:35.282108Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:35.282158Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:35.282366Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:35.282418Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:35.282460Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:35.282491Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:35.282526Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:35.282562Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:35.282602Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:35.282652Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:35.282690Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:35.282726Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:35.282760Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:35.282828Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:35.282858Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:35.282893Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:35.282939Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.282944Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.282947Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.282949Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:30:35.282962Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:35.282966Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.282969Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.282971Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.283108Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.283116Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.283156Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.283378Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.283382Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.283651Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:35.283690Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:35.283715Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:35.283761Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:35.283899Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:35.283936Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:35.283965Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:35.283985Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:35.284009Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:35.284033Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:35.284062Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:35.284100Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:35.284131Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:35.284150Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:35.284174Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:35.284224Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:35.284247Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:35.284273Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:35.284308Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.284419Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:35.284466Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:35.284470Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.101402Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.112180Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:36.116784Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:36.116931Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:36.117089Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:36.117565Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:36.117691Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:36.117774Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:36.117826Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:36.117889Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:36.117950Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:36.118022Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:36.118115Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:36.118188Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:36.118296Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:36.118390Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:36.118534Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:36.118598Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:36.118801Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:36.119036Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.119064Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.119071Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.119077Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-06-12T16:30:36.119083Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.119089Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.119095Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.119101Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.119106Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.119113Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.119518Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.119547Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.123006Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:36.123163Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:36.123386Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:36.123767Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:36.124807Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:36.124966Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:36.125054Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:36.125110Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:36.125325Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:36.125874Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:36.126076Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:36.126186Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:36.126234Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:36.126300Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:36.126419Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:36.126499Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:36.126529Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:36.126562Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:36.126846Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.128499Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:36.128705Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:36.128743Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.141338Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.142257Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.142334Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.142377Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.142422Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:46.142453Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.142785Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.142837Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.142880Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.142914Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.142950Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.142984Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.143025Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.143075Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.143115Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.143143Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.143179Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.143270Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.143304Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.143342Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.143395Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.143401Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.143404Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.143409Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:30:46.143429Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:46.143434Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.143438Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.143441Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.143565Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.143574Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.143611Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.143821Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.143826Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.144138Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.144186Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.144241Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.144311Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.144468Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.144520Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.144558Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.144588Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.144625Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.144675Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.144723Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.144811Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.144842Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.144866Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.144893Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.144953Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.144979Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.145007Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.145046Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.145147Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.145204Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.145212Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.146844Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.147928Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.148135Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.148198Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.148300Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.148757Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.148823Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.149710Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.150029Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.150070Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.150103Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.150142Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.150201Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.150238Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.150262Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.150304Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.150380Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.150409Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.150443Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.150506Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.150513Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.150518Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.150521Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2025-06-12T16:30:46.150525Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.150528Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.150531Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.150534Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.150537Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.150541Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.150832Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.150840Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.151237Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.151291Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.151326Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.151398Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.151571Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.151617Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.151653Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.151677Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.151708Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.151737Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.151771Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.151814Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.151941Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.151968Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.152005Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.152065Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.152090Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.152120Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.152163Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.152244Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.152294Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.152299Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.158234Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.158627Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.158683Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.158719Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.158762Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:46.158784Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.158960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.159007Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.159057Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.159092Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.159138Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.159187Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.159236Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.159279Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.159312Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.159334Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.159361Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.159424Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.159450Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.159480Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.159524Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.159529Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.159533Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.159536Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:30:46.159548Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/package.json"
+2025-06-12T16:30:46.159554Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.159557Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.159560Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.159767Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.159806Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.159896Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.160173Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.160184Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.160509Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:30:46.160554Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:30:46.160583Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:30:46.160636Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:30:46.160798Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:30:46.160847Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:30:46.160880Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:30:46.160902Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:30:46.160930Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:30:46.160956Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:30:46.160988Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:30:46.161028Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:30:46.161066Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:30:46.161091Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:30:46.161125Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:30:46.161180Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:30:46.161204Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:30:46.161232Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:30:46.161276Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.161400Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:30:46.161444Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:30:46.161449Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.196558Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.197696Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:31:10.197758Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:31:10.197824Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:31:10.198001Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:31:10.198160Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:31:10.198593Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:31:10.198753Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:31:10.198849Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:31:10.199025Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:31:10.199139Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:31:10.199219Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:31:10.199309Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:31:10.199425Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:31:10.199475Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:31:10.199507Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:31:10.199545Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:31:10.199619Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:31:10.199651Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:31:10.199689Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:31:10.199743Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.199749Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.199753Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.199756Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-06-12T16:31:10.199773Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/astro.config.mjs"
+2025-06-12T16:31:10.199778Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.199781Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.199784Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.199972Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.200022Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.200094Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.200358Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.200363Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.200697Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/popular-equinox"
+2025-06-12T16:31:10.200745Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public"
+2025-06-12T16:31:10.200777Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/public/images"
+2025-06-12T16:31:10.200835Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript"
+2025-06-12T16:31:10.200992Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/public"
+2025-06-12T16:31:10.201048Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/.vscode"
+2025-06-12T16:31:10.201086Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src"
+2025-06-12T16:31:10.201112Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/components"
+2025-06-12T16:31:10.201143Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/layouts"
+2025-06-12T16:31:10.201172Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/assets"
+2025-06-12T16:31:10.201206Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/--typescript/src/pages"
+2025-06-12T16:31:10.201250Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/.vscode"
+2025-06-12T16:31:10.201281Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src"
+2025-06-12T16:31:10.201303Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/styles"
+2025-06-12T16:31:10.201331Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/components"
+2025-06-12T16:31:10.201391Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/layouts"
+2025-06-12T16:31:10.201416Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/assets"
+2025-06-12T16:31:10.201446Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/anthonysmith/Desktop/Projects/astro-ai-landing/src/pages"
+2025-06-12T16:31:10.201490Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.201730Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-06-12T16:31:10.201806Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-06-12T16:31:10.201814Z  INFO get_globs: tailwindcss_oxide::scanner: exit

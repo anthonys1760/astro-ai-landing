@@ -1,0 +1,70 @@
+---
+---
+
+<section class="py-20 bg-dark-light">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <span class="gradient-text">What Users Say</span>
+      </h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Join thousands of satisfied users who have transformed their productivity with Astro AI.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          name: "Alex Johnson",
+          role: "Content Creator",
+          quote: "Astro AI has been a game-changer for my content creation process. It helps me brainstorm ideas and draft content in half the time."
+        },
+        {
+          name: "Sarah Williams",
+          role: "Software Developer",
+          quote: "I use Astro AI daily for coding assistance. It helps me debug issues and explains complex concepts in a way that's easy to understand."
+        },
+        {
+          name: "Michael Chen",
+          role: "Marketing Manager",
+          quote: "The marketing insights I get from Astro AI have helped our team develop more effective strategies. It's like having an expert consultant on call 24/7."
+        },
+        {
+          name: "Emily Rodriguez",
+          role: "Student",
+          quote: "Astro AI has been invaluable for my studies. It helps me understand difficult concepts and provides concise explanations for complex topics."
+        },
+        {
+          name: "David Kim",
+          role: "Entrepreneur",
+          quote: "As a busy founder, Astro AI helps me draft emails, prepare meeting agendas, and brainstorm solutions to business challenges. It's my secret productivity weapon."
+        },
+        {
+          name: "Olivia Taylor",
+          role: "UX Designer",
+          quote: "I love using Astro AI to generate design ideas and get feedback on my concepts. It's helped me think outside the box and improve my work."
+        }
+      ].map(testimonial => (
+        <div class="bg-dark p-6 rounded-xl">
+          <div class="flex items-start mb-4">
+            {Array(5).fill(0).map(() => (
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#6c5ce7" stroke="none">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ))}
+          </div>
+          <p class="text-gray-300 mb-6 italic">"{ testimonial.quote }"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-sm">
+              {testimonial.name.charAt(0)}
+            </div>
+            <div>
+              <h4 class="font-medium">{testimonial.name}</h4>
+              <p class="text-sm text-gray-400">{testimonial.role}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

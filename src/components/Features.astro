@@ -1,0 +1,58 @@
+---
+---
+
+<section id="features" class="py-20 bg-dark-light">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <span class="gradient-text">Powerful Features</span>
+      </h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Experience AI-powered conversations that help you work smarter, create faster, and solve problems with ease.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          icon: "💬",
+          title: "Natural Conversations",
+          description: "Chat naturally with an AI that understands context and remembers your preferences."
+        },
+        {
+          icon: "🚀",
+          title: "Lightning Fast",
+          description: "Get instant responses powered by the latest AI models with minimal latency."
+        },
+        {
+          icon: "🛠️",
+          title: "Versatile Tools",
+          description: "From writing assistance to problem-solving and creative ideation—Astro AI does it all."
+        },
+        {
+          icon: "🔒",
+          title: "Private & Secure",
+          description: "Your conversations and data stay private with end-to-end encryption."
+        },
+        {
+          icon: "🌐",
+          title: "Works Everywhere",
+          description: "Available on iOS, Android, and desktop—your AI assistant is always with you."
+        },
+        {
+          icon: "🧠",
+          title: "Always Learning",
+          description: "Astro AI continuously improves to better understand your needs and preferences."
+        }
+      ].map(feature => (
+        <div class="bg-dark p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-dark-light mb-4 text-2xl">
+            {feature.icon}
+          </div>
+          <h3 class="text-xl font-semibold mb-2">{feature.title}</h3>
+          <p class="text-gray-300">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#1e1e2e"/>
+  <defs>
+    <linearGradient id="gradient" x1="600" y1="100" x2="600" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6c5ce7"/>
+      <stop offset="1" stop-color="#a29bfe"/>
+    </linearGradient>
+  </defs>
+  <path 
+    d="M200 315C200 262.533 220.28 212.133 255.285 177.128C290.29 142.123 340.69 121.843 393.157 121.843C445.623 121.843 496.024 142.123 531.029 177.128C566.034 212.133 586.313 262.533 586.313 315C586.313 367.467 566.034 417.867 531.029 452.872C496.024 487.877 445.623 508.157 393.157 508.157C340.69 508.157 290.29 487.877 255.285 452.872C220.28 417.867 200 367.467 200 315Z" 
+    fill="url(#gradient)" 
+    opacity="0.2"
+  />
+  <path 
+    d="M613.688 315C613.688 262.533 633.967 212.133 668.972 177.128C703.977 142.123 754.377 121.843 806.844 121.843C859.31 121.843 909.71 142.123 944.715 177.128C979.72 212.133 1000 262.533 1000 315C1000 367.467 979.72 417.867 944.715 452.872C909.71 487.877 859.31 508.157 806.844 508.157C754.377 508.157 703.977 487.877 668.972 452.872C633.967 417.867 613.688 367.467 613.688 315Z" 
+    fill="url(#gradient)" 
+    opacity="0.2"
+  />
+  <text x="600" y="280" font-family="sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">Astro AI</text>
+  <text x="600" y="350" font-family="sans-serif" font-size="40" fill="#a29bfe" text-anchor="middle">Your Personal AI Assistant</text>
+</svg>

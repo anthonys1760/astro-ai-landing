@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Pricing from '../components/Pricing.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Astro AI - Your Personal AI Assistant" description="Astro AI is your intelligent AI assistant that helps you get things done faster with natural conversations and powerful features.">
+  <div class="min-h-screen bg-dark">
+    <Header />
+    <main>
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Testimonials />
+      <Pricing />
+      <CTA />
+    </main>
+    <Footer />
+  </div>
+</Layout>

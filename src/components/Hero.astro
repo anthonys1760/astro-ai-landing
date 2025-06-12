@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import Button from "./Button.astro";
+import PhoneFrame from "./PhoneFrame.astro";
+---
+
+<section class="py-20 overflow-hidden">
+  <div class="container-custom">
+    <div class="grid lg:grid-cols-2 items-center gap-12">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          <span>Chat with the</span>
+          <span class="gradient-text block">Future of AI</span>
+        </h1>
+        
+        <p class="text-lg text-gray-300 mb-8">
+          Astro AI is your personal AI assistant that helps you get things done. 
+          Ask questions, create content, solve problems, and have natural conversations 
+          with advanced AI models at your fingertips.
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#download" class="btn btn-primary">
+            Download Now
+          </a>
+          <a href="#demo" class="btn bg-dark-light hover:bg-opacity-80">
+            See Demo
+          </a>
+        </div>
+        
+        <div class="mt-8 flex items-center gap-4">
+          <div class="flex -space-x-3">
+            {Array(4).fill(0).map((_, i) => (
+              <div class="w-10 h-10 rounded-full border-2 border-dark bg-gray-600 flex items-center justify-center overflow-hidden">
+                <span class="text-xs">👤</span>
+              </div>
+            ))}
+          </div>
+          <div>
+            <span class="text-sm text-gray-300">Trusted by 10,000+ users worldwide</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <!-- Main iPhone with App Screenshot -->
+        <PhoneFrame imageUrl="/astro-ai.png" alt="Astro AI App Screenshot" />
+        
+        <!-- Secondary iPhone (tilted) -->
+        <div class="absolute -right-20 top-20 hidden md:block transform rotate-6 opacity-80 scale-75">
+          <PhoneFrame imageUrl="/images/screenshot2.png" alt="Astro AI App Screenshot 2" />
+        </div>
+        
+        <!-- Glowing background effect -->
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary rounded-full opacity-20 blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>

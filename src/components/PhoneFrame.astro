@@ -1,0 +1,89 @@
+---
+interface Props {
+  imageUrl: string;
+  alt: string;
+  className?: string;
+}
+
+const { imageUrl, alt, className = '' } = Astro.props;
+---
+
+<div class={`phone-mockup ${className}`}>
+  <div class="phone-frame">
+    <div class="phone-screen">
+      <img 
+        src={imageUrl} 
+        alt={alt}
+        class="screen-content"
+      />
+    </div>
+    <div class="notch"></div>
+    <div class="home-indicator"></div>
+  </div>
+</div>
+
+<style>
+  .phone-mockup {
+    width: 270px;
+    height: 550px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .phone-frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 12px solid #121212;
+    background: #000;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .screen-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+  .notch {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10;
+  }
+  
+  .home-indicator {
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    z-index: 10;
+  }
+</style>

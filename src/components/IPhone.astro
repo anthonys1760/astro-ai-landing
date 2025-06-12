@@ -1,0 +1,30 @@
+---
+interface Props {
+  imageUrl: string;
+  alt: string;
+  className?: string;
+}
+
+const { imageUrl, alt, className = '' } = Astro.props;
+---
+
+<div class={`relative ${className || 'w-72 h-[550px]'}`}>
+  <!-- First place the app screenshot - this needs to be FIRST in the DOM -->
+  <div class="absolute inset-0 flex items-center justify-center" 
+       style="top: 70px; left: 50px; right: 50px; bottom: 70px; z-index: 1;">
+    <img 
+      src={imageUrl} 
+      alt={alt}
+      class="max-w-full max-h-full object-contain"
+    />
+  </div>
+  
+  <!-- Then overlay the iPhone frame on top -->
+  <div class="absolute inset-0 z-10 pointer-events-none">
+    <img 
+      src="/iphone-frame.svg" 
+      alt="iPhone 14 Pro Max Frame" 
+      class="w-full h-full"
+    />
+  </div>
+</div>
