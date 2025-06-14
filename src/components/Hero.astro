@@ -44,11 +44,11 @@ import PhoneFrame from "./PhoneFrame.astro";
       
       <div class="relative">
         <!-- Main iPhone with App Screenshot -->
-        <PhoneFrame imageUrl="/astro-ai.png" alt="Astro AI App Screenshot" />
+        <PhoneFrame imageUrl={`${import.meta.env.BASE_URL}/astro-ai.png`} alt="Astro AI App Screenshot" />
         
         <!-- Secondary iPhone (tilted) -->
         <div class="absolute -right-20 top-20 hidden md:block transform rotate-6 opacity-80 scale-75">
-          <PhoneFrame imageUrl="/images/screenshot2.png" alt="Astro AI App Screenshot 2" />
+          <PhoneFrame imageUrl={`${import.meta.env.BASE_URL}/images/screenshot2.png`} alt="Astro AI App Screenshot 2" />
         </div>
         
         <!-- Glowing background effect -->
