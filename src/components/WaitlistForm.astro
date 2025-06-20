@@ -10,67 +10,67 @@ const {
 } = Astro.props;
 ---
 
-<section id="waitlist" class="py-20 bg-dark-light">
-  <div class="container-custom">
+<section id="waitlist" class="py-24 bg-dark-light">
+  <div class="container-custom px-4 sm:px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">
         <span class="gradient-text">{title}</span>
       </h2>
-      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+      <p class="text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
         {subtitle}
       </p>
 
-      <div class="bg-dark p-8 rounded-xl shadow-glow">
-        <form action="https://formspree.io/f/mzzgaddp" method="POST" class="space-y-4">
-          <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-dark p-8 sm:p-12 rounded-xl shadow-glow">
+        <form action="https://formspree.io/f/mzzgaddp" method="POST" class="space-y-8 md:space-y-10">
+          <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-2">
             <div>
-              <label for="firstName" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
+              <label for="firstName" class="block text-base font-medium text-gray-300 mb-2">First Name</label>
               <input 
                 type="text" 
                 id="firstName" 
                 name="firstName" 
-                class="w-full px-4 py-3 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary" 
+                class="w-full px-5 py-3.5 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary text-base" 
                 placeholder="John"
                 required
               >
             </div>
             <div>
-              <label for="lastName" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
+              <label for="lastName" class="block text-base font-medium text-gray-300 mb-2">Last Name</label>
               <input 
                 type="text" 
                 id="lastName" 
                 name="lastName" 
-                class="w-full px-4 py-3 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary" 
+                class="w-full px-5 py-3.5 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary text-base" 
                 placeholder="Doe"
               >
             </div>
           </div>
 
           <div>
-            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+            <label for="email" class="block text-base font-medium text-gray-300 mb-2">Email Address</label>
             <input 
               type="email" 
               id="email" 
               name="email" 
-              class="w-full px-4 py-3 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary" 
+              class="w-full px-5 py-3.5 bg-dark-light border border-gray-700 rounded-lg focus:ring-primary focus:border-primary text-base" 
               placeholder="you@example.com"
               required
             >
           </div>
           
-          <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">Device Preference</label>
-            <div class="flex gap-4">
+          <div class="py-4 my-4">
+            <label class="block text-base font-medium text-gray-300 mb-5">Device Preference</label>
+            <div class="flex flex-col sm:flex-row sm:justify-center gap-8 sm:gap-12 py-2">
               <div class="flex items-center">
                 <input 
                   type="radio" 
                   id="android" 
                   name="devicePreference" 
                   value="Android"
-                  class="w-4 h-4 text-primary bg-dark-light border-gray-700 focus:ring-primary"
+                  class="w-5 h-5 text-primary bg-dark-light border-gray-700 focus:ring-primary"
                   required
                 >
-                <label for="android" class="ml-2 text-sm font-medium text-gray-300">Android</label>
+                <label for="android" class="ml-3 text-base font-medium text-gray-300">Android</label>
               </div>
               <div class="flex items-center">
                 <input 
@@ -78,42 +78,32 @@ const {
                   id="iphone" 
                   name="devicePreference" 
                   value="iPhone"
-                  class="w-4 h-4 text-primary bg-dark-light border-gray-700 focus:ring-primary"
+                  class="w-5 h-5 text-primary bg-dark-light border-gray-700 focus:ring-primary"
                 >
-                <label for="iphone" class="ml-2 text-sm font-medium text-gray-300">iPhone</label>
-              </div>
-              <div class="flex items-center">
-                <input 
-                  type="radio" 
-                  id="both" 
-                  name="devicePreference" 
-                  value="Both"
-                  class="w-4 h-4 text-primary bg-dark-light border-gray-700 focus:ring-primary"
-                >
-                <label for="both" class="ml-2 text-sm font-medium text-gray-300">Both</label>
+                <label for="iphone" class="ml-3 text-base font-medium text-gray-300">iPhone</label>
               </div>
             </div>
           </div>
 
-          <div class="flex items-start">
-            <div class="flex items-center h-5">
+          <div class="flex items-start py-4 my-2">
+            <div class="flex items-center h-6">
               <input 
+                type="checkbox" 
                 id="updates" 
                 name="updates" 
-                type="checkbox" 
-                class="w-4 h-4 bg-dark-light border border-gray-700 rounded focus:ring-primary"
+                class="w-5 h-5 bg-dark-light border border-gray-700 rounded focus:ring-primary"
                 checked
               >
             </div>
-            <div class="ml-3 text-sm">
-              <label for="updates" class="text-gray-300">Send me product updates and announcements</label>
+            <div class="ml-4 text-base">
+              <label for="updates" class="font-medium text-gray-300">Send me product updates and announcements</label>
             </div>
           </div>
 
-          <div class="pt-2">
+          <div class="pt-6 mt-2">
             <button 
               type="submit" 
-              class="w-full btn btn-primary py-3"
+              class="w-full btn btn-primary py-5 text-lg font-semibold tracking-wide"
             >
               Join the Waitlist
             </button>
