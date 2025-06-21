@@ -12,12 +12,12 @@ import { Image } from 'astro:assets';
         Join the waitlist now and be the first to experience Astro AI when we launch. Transform the way you work, create, and solve problems with the power of artificial intelligence at your fingertips.
       </p>
       
-      <div class="flex flex-wrap justify-center gap-4 mb-10">
-        <a href="#waitlist" class="bg-black hover:bg-opacity-80 text-white px-4 py-2 rounded-lg flex items-center justify-center">
-          <Image src={`${import.meta.env.BASE_URL}/logo/App-Store-Badge.png`} alt="App Store" width={140} height={40} />
+      <div class="flex flex-wrap justify-center gap-6 mb-10">
+        <a href="#waitlist" class="hover:opacity-90 transition-opacity flex items-center justify-center">
+          <div class="w-[180px] h-[60px] flex items-center justify-center">
+            <Image src={`${import.meta.env.BASE_URL}/logo/apple.png`} alt="App Store" width={160} height={48} class="object-contain w-[160px] h-[48px]" />
+          </div>
         </a>
-        <a href="#waitlist" class="bg-black hover:bg-opacity-80 text-white px-4 py-2 rounded-lg flex items-center justify-center">
-          <Image src={`${import.meta.env.BASE_URL}/logo/Google_Play-Badge-Logo.wine (1).svg`} alt="Google Play" width={160} height={40} />
         </a>
       </div>
       

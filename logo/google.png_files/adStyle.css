@@ -1,0 +1,131 @@
+@font-face {
+     font-family: MaxSansBold;
+     src: url("MaxSans-Bold.woff2");
+}
+@font-face {
+     font-family: MaxSansDemi;
+     src: url("MaxSans-Demi.woff2");
+}
+@font-face {
+     font-family: MaxSansRegular;
+     src: url("MaxSans-Regular.woff2");
+}
+#guide{opacity:0.5;z-index:9999}
+.fullSize {width:300px; height:250px; left:0px; top:0px;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.flexCenter{display:flex; align-items: center; justify-content: center;}
+.flexBottom{display:flex; align-items: flex-end; justify-content: center;}
+.col{flex-direction: column;}
+.row{flex-direction: row;}
+/*********************** INTRO ELEMENTS ***********************/
+#maxLogoContainer {width:205px; height:55px; left:48px; top:98px;}
+#mContent{top:-2px;left:1px;}
+#xContent{top:-1px;left:-1px;}
+#aContent{z-index: 10;}
+
+.introFrame {
+     top: 0px;
+     left: 0px;
+     width: 300px;
+     height: 250px;
+     z-index: 11;
+ }
+ .mainFrame {
+     top: 0;
+     left: 0px;
+     width: 300px;
+     height: 100%;
+     background: #FFFFFF00;
+     overflow: hidden;
+ }
+#innerFrame {
+     top: 0px;
+     left: 0px;
+     width: 300px;
+     height: 250px;
+     -webkit-clip-path: circle(4% at 52.1% 50.2%);
+     clip-path: circle(4% at 52.1% 50.2%);
+}
+/*********************** MAIN CONTENT ELEMENTS ***********************/
+.teamImage{width:150px; height:123px; top:0px;}
+#team1Content{left:0px;}
+#team2Content{left:150px;}
+#vsContent{width:24px; height:123px; left:138px; top:0px;}
+#partnerLogo2{width:auto; height:13px; left:5px; top:5px;}
+#extraImageContent{width:300px; height:123px; left:0px; top:0px;}
+/*********************** FLUID ELEMENTS ***********************/
+#mainFluidContainer{width:230px; height:88px; left:35px; top:128px;}
+#innerFluidContainer{width:230px; height:88px;}
+#partnerLogo1{width:auto; height:13px; margin-bottom: 3px;}
+#frame1HeadlineContainer{max-width:230px; height:20px;}
+#frame1HeadlineContent{
+     font-family: MaxSansBold;
+     font-size:18px;
+     line-height: 1.1em;
+     color: white;
+     text-align: center;
+     white-space: nowrap;
+}
+#frame1SubheadlineContainer {max-width:230px;height:14px;}
+#frame1SubheadlineContent {
+     font-family: MaxSansDemi;
+     font-size:13px;
+     line-height: 1.1em;
+     text-align: center;
+     color:white;  
+     top:0px; 
+     white-space: nowrap;
+     top: -1.5px;
+}
+#frame1Headline2Container{max-width:168px; height:12px;margin-top:2px;}
+#frame1Headline2Content{
+     font-family: MaxSansDemi;
+     font-size:13px;
+     line-height: 1em;
+     color: white;
+     text-align: center;
+}
+#logoCTAContainer{width:230px; height:auto; max-height:35px; min-height: 20px; margin-top: 3px; gap: 11px;}
+#maxLogoContent{width:74px; height:auto; max-height: 35px; min-height: 20px}
+#ctaTextContainer {width: auto; border-radius: 12px;}
+#ctaTextContent {
+     font-family: MaxSansBold;
+     font-size:11px;
+     line-height: 1.1em;
+     letter-spacing: 0.33px;
+     text-align: center;
+     color:#0033FF;   
+     padding: 7px 12px 4.5px 12px;  
+     top:0px;
+     white-space: nowrap;
+}
+#brSubheadlineContainer{width:205px; height:10px;margin-top:7px;}
+#brLogoContent{max-width:59px; height:10px;top:-1px;}
+#legalContainer{width:280px; height:21px; left:10px; top:227.5px;}
+#legalContent{
+     font-family: MaxSansRegular;
+     font-size:6px;
+     line-height: 1.10em;
+     text-align: center;
+     color:white;       
+}
+#legalContent.macSafari,#legalContent.iphoneSafari,#legalContent.ipadSafari {
+     top:-1px;
+}
+sup {
+     font-size:0.25em;
+     top:-1.9em;
+     left:0.1em;
+}
+.headlineDemi{
+     position:relative;
+     font-family:MaxSansDemi;
+     font-size:0.7em;
+     top: -0.2em;
+}
+.subHeadlineSup {
+     position:relative;
+     font-size:0.5em;
+     top:-0.7em;
+}
