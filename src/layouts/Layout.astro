@@ -39,6 +39,15 @@ const { title = 'Astro AI - Chat with the Future', description = 'Experience sma
 		<meta property="twitter:image" content="/og-image.png" />
 		
 		<title>{title}</title>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ9SK88B5W"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZJ9SK88B5W');
+		</script>
 	</head>
 	<body>
 		<slot />
