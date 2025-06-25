@@ -1,0 +1,104 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { Image } from 'astro:assets';
+
+// Sample blog posts data
+const posts = [
+  {
+    slug: 'future-of-ai-assistants',
+    title: 'The Future of AI Assistants',
+    excerpt: 'Discover how AI assistants like Astro AI are revolutionizing productivity and daily interactions with technology.',
+    date: 'June 25, 2025',
+    author: 'Astro AI Team',
+    image: '/blog/ai-assistant-future.jpg',
+    tags: ['AI Technology', 'Future Tech']
+  },
+  {
+    slug: 'how-ai-enhances-productivity',
+    title: 'How AI Enhances Your Daily Productivity',
+    excerpt: 'Learn how artificial intelligence tools can help you work smarter, not harder, with practical examples and tips.',
+    date: 'June 20, 2025',
+    author: 'Astro AI Team',
+    image: '/blog/productivity-ai.jpg',
+    tags: ['Productivity', 'AI Tools']
+  },
+  {
+    slug: 'privacy-and-ai-assistants',
+    title: 'Privacy Considerations When Using AI Assistants',
+    excerpt: 'Understanding the important balance between powerful AI features and maintaining your personal privacy.',
+    date: 'June 15, 2025',
+    author: 'Astro AI Team',
+    image: '/blog/privacy-ai.jpg',
+    tags: ['Privacy', 'Security']
+  },
+];
+---
+
+<Layout title="AI Blog - Astro AI">
+  <div class="min-h-screen bg-dark">
+    <Header />
+    <main>
+      <div class="container-custom py-16">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="gradient-text">Astro AI Blog</span>
+      </h1>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+        Insights, updates, and educational content about AI technology, productivity, 
+        and how Astro AI is transforming the way we interact with artificial intelligence.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map(post => (
+        <div class="bg-dark-light rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1 duration-300">
+          <div class="aspect-video bg-gray-800 w-full">
+            <!-- Placeholder for blog images -->
+            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+              <span class="text-2xl">🖼️</span>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex gap-2 mb-3">
+              {post.tags.map(tag => (
+                <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full">{tag}</span>
+              ))}
+            </div>
+            
+            <h3 class="text-xl font-bold mb-2">
+              <a href={`/blog/${post.slug}`} class="hover:text-primary transition-colors">
+                {post.title}
+              </a>
+            </h3>
+            
+            <p class="text-gray-300 text-sm mb-4">
+              {post.excerpt}
+            </p>
+            
+            <div class="flex items-center justify-between mt-4">
+              <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-full bg-gray-700"></div>
+                <span class="text-sm text-gray-400">{post.author}</span>
+              </div>
+              <span class="text-xs text-gray-500">{post.date}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-16 text-center">
+      <p class="text-gray-300">
+        Stay tuned for more content about AI technology and Astro AI features!
+      </p>
+      <a href="#waitlist" class="btn btn-primary inline-block mt-4">
+        Join our waitlist for updates
+      </a>
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>

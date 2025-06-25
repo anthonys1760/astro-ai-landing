@@ -1,0 +1,69 @@
+---
+import Layout from "./Layout.astro";
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} - Astro AI Blog`}>
+  <div class="min-h-screen bg-dark">
+    <Header />
+    <main>
+      <div class="container-custom py-16 max-w-4xl">
+    <div class="mb-8">
+      <a href="/blog" class="text-primary hover:text-primary/80 flex items-center gap-2 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Back to Blog
+      </a>
+      
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">
+        {frontmatter.title}
+      </h1>
+      
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-6">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-full bg-gray-700"></div>
+          <span>{frontmatter.author}</span>
+        </div>
+        <span>•</span>
+        <span>{frontmatter.date}</span>
+        <span>•</span>
+        <div class="flex gap-2">
+          {frontmatter.tags.map((tag: string) => (
+            <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full">{tag}</span>
+          ))}
+        </div>
+      </div>
+      
+      <div class="aspect-video bg-gray-800 rounded-xl overflow-hidden mb-10 w-full">
+        <!-- Placeholder for featured image -->
+        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+          <span class="text-4xl">{frontmatter.emoji || '🖼️'}</span>
+        </div>
+      </div>
+    </div>
+    
+    <article class="prose prose-invert prose-lg max-w-none">
+      <slot />
+    </article>
+    
+    <div class="mt-16 border-t border-gray-800 pt-8">
+      <h3 class="text-xl font-bold mb-4">Continue Reading</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="/blog" class="p-6 bg-dark-light rounded-xl hover:bg-gray-800 transition-colors">
+          <h4 class="font-bold mb-2">Discover more articles</h4>
+          <p class="text-sm text-gray-400">Browse our full collection of AI insights and tutorials</p>
+        </a>
+        <a href="#waitlist" class="p-6 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors">
+          <h4 class="font-bold mb-2">Join the waitlist</h4>
+          <p class="text-sm text-gray-400">Get early access to Astro AI and exclusive content</p>
+        </a>
+      </div>
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>
