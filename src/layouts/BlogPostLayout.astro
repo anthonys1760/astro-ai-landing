@@ -46,9 +46,58 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
     
-    <article class="prose prose-invert prose-lg max-w-none prose-headings:mt-8 prose-headings:mb-4 prose-p:my-6 prose-li:my-2 prose-ul:my-6 prose-ol:my-6">
+    <article class="blog-content">
       <slot />
     </article>
+    
+    <style>
+      .blog-content {
+        color: #fff;
+        max-width: 100%;
+        line-height: 1.6;
+      }
+      
+      .blog-content :global(h1) {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        margin-top: 2.5rem;
+      }
+      
+      .blog-content :global(h2) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+        margin-top: 2.5rem;
+      }
+      
+      .blog-content :global(p) {
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+      
+      .blog-content :global(ul),
+      .blog-content :global(ol) {
+        margin: 1.5rem 0 1.5rem 1.5rem;
+      }
+      
+      .blog-content :global(li) {
+        margin-bottom: 0.75rem;
+        line-height: 1.6;
+      }
+      
+      .blog-content :global(strong) {
+        font-weight: bold;
+      }
+      
+      .blog-content :global(blockquote) {
+        border-left: 4px solid #6366f1;
+        padding-left: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        font-style: italic;
+      }
+    </style>
     
     <div class="mt-16 border-t border-gray-800 pt-8">
       <h3 class="text-xl font-bold mb-4">Continue Reading</h3>
