@@ -4,6 +4,7 @@ title: The Future of AI Assistants
 author: Astro AI Team
 date: June 25, 2025
 emoji: 🤖
+image: astronaut-in-space
 tags: 
   - AI Technology
   - Future Tech

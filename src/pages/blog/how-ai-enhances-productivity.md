@@ -4,6 +4,7 @@ title: How AI Enhances Your Daily Productivity
 author: Astro AI Team
 date: June 20, 2025
 emoji: ⚡
+image: astronaut-in-space
 tags: 
   - Productivity
   - AI Tools

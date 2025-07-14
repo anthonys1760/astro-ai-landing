@@ -4,6 +4,7 @@ title: Privacy Considerations When Using AI Assistants
 author: Astro AI Team
 date: June 15, 2025
 emoji: 🔒
+image: astronaut-in-space
 tags: 
   - Privacy
   - Security
