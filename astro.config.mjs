@@ -8,8 +8,7 @@ export default defineConfig({
     // Ensure Tailwind CSS is properly bundled
     applyBaseStyles: true,
   })],
-  site: 'https://anthonys1760.github.io',
-  base: '/astro-ai-landing',
+  site: 'https://astro-ai.net',
   output: 'static',
   build: {
     assets: '_astro'
