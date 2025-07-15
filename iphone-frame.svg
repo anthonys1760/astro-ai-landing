@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 860" fill="none">
+  <!-- This is a transparent frame with a hole in the middle to show the app screenshot -->
+  <path d="
+    M 65,10 
+    H 365 
+    C 393.71,10 410,26.29 410,55 
+    V 805 
+    C 410,833.71 393.71,850 365,850 
+    H 65 
+    C 36.29,850 20,833.71 20,805 
+    V 55 
+    C 20,26.29 36.29,10 65,10 
+    Z
+    
+    M 65,80
+    H 365
+    C 380,80 380,80 380,95
+    V 775
+    C 380,790 380,790 365,790
+    H 65
+    C 50,790 50,790 50,775
+    V 95
+    C 50,80 50,80 65,80
+    Z
+  " fill="#1A1A1A" stroke="#444" stroke-width="2"/>
+  
+  <!-- Dynamic Island -->
+  <rect x="160" y="35" width="110" height="35" rx="17.5" fill="#000000" stroke="#222" stroke-width="1"/>
+  
+  <!-- Camera in dynamic island -->
+  <circle cx="180" cy="52.5" r="8" fill="#111" stroke="#333" stroke-width="1" opacity="0.8"/>
+  <circle cx="180" cy="52.5" r="4" fill="#444" opacity="0.8"/>
+  
+  <!-- FaceID sensors -->
+  <circle cx="250" cy="52.5" r="6" fill="#111" stroke="#333" stroke-width="1" opacity="0.7"/>
+  <circle cx="250" cy="52.5" r="3" fill="#444" opacity="0.7"/>
+  
+  <!-- Volume Buttons - with 3D effect -->
+  <rect x="2" y="180" width="5" height="40" rx="2.5" fill="#222" />
+  <rect x="3" y="180" width="3" height="40" rx="1.5" fill="#444" />
+  
+  <rect x="2" y="240" width="5" height="40" rx="2.5" fill="#222" />
+  <rect x="3" y="240" width="3" height="40" rx="1.5" fill="#444" />
+  
+  <rect x="2" y="300" width="5" height="60" rx="2.5" fill="#222" />
+  <rect x="3" y="300" width="3" height="60" rx="1.5" fill="#444" />
+  
+  <!-- Power Button - with 3D effect -->
+  <rect x="423" y="240" width="5" height="60" rx="2.5" fill="#222" />
+  <rect x="424" y="240" width="3" height="60" rx="1.5" fill="#444" />
+  
+  <!-- Bottom swipe indicator -->
+  <rect x="185" y="810" width="60" height="5" rx="2.5" fill="#555" opacity="0.8"/>
+</svg>
