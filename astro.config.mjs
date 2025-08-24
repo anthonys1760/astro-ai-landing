@@ -12,15 +12,5 @@ export default defineConfig({
   output: 'static',
   build: {
     assets: '_astro'
-  },
-  vite: {
-    build: {
-      cssCodeSplit: false, // Generate a single CSS file
-      rollupOptions: {
-        output: {
-          assetFileNames: 'assets/[name][extname]',
-        },
-      },
-    },
   }
 });
