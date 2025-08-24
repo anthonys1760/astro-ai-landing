@@ -54,6 +54,11 @@ const imageMap = {
             alt={frontmatter.title} 
             class="w-full h-full object-cover"
           />
+        ) : frontmatter.image && /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image) ? (
+          <img 
+            src={`/assets/${frontmatter.image}`}
+            alt={frontmatter.title}
+            class="w-full h-full object-cover" />
         ) : (
           <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
             <span class="text-4xl">{frontmatter.emoji || '🖼️'}</span>

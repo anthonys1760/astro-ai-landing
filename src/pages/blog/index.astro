@@ -4,36 +4,33 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { Image } from 'astro:assets';
 
-// Sample blog posts data
-const posts = [
-  {
-    slug: 'future-of-ai-assistants',
-    title: 'The Future of AI Assistants',
-    excerpt: 'Discover how AI assistants like Astro AI are revolutionizing productivity and daily interactions with technology.',
-    date: 'June 25, 2025',
-    author: 'Astro AI Team',
-    image: '/blog/ai-assistant-future.jpg',
-    tags: ['AI Technology', 'Future Tech']
-  },
-  {
-    slug: 'how-ai-enhances-productivity',
-    title: 'How AI Enhances Your Daily Productivity',
-    excerpt: 'Learn how artificial intelligence tools can help you work smarter, not harder, with practical examples and tips.',
-    date: 'June 20, 2025',
-    author: 'Astro AI Team',
-    image: '/blog/productivity-ai.jpg',
-    tags: ['Productivity', 'AI Tools']
-  },
-  {
-    slug: 'privacy-and-ai-assistants',
-    title: 'Privacy Considerations When Using AI Assistants',
-    excerpt: 'Understanding the important balance between powerful AI features and maintaining your personal privacy.',
-    date: 'June 15, 2025',
-    author: 'Astro AI Team',
-    image: '/blog/privacy-ai.jpg',
-    tags: ['Privacy', 'Security']
-  },
-];
+// Import featured image assets to mirror BlogPostLayout mapping
+import astronautImage from '../../assets/astronaut-in-space.jpg';
+
+// Map image names (from frontmatter `image`) to imported assets
+const imageMap: Record<string, any> = {
+  'astronaut-in-space': astronautImage,
+};
+
+// Dynamically load blog posts from markdown files in this directory
+const modules = import.meta.glob('./*.md');
+const posts = await Promise.all(
+  Object.entries(modules).map(async ([path, resolver]) => {
+    const mod: any = await resolver();
+    const fm = mod.frontmatter || {};
+    // derive slug from file path ./file.md -> file
+    const slug = path.replace('./', '').replace('.md', '');
+    return {
+      slug,
+      title: fm.title || slug,
+      excerpt: fm.excerpt || '',
+      date: fm.date || '',
+      author: fm.author || 'Astro AI Team',
+      image: fm.image || '',
+      tags: fm.tags || [],
+    };
+  })
+);
 ---
 
 <Layout 
@@ -59,10 +56,22 @@ const posts = [
       {posts.map(post => (
         <div class="bg-dark-light rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1 duration-300">
           <div class="aspect-video bg-gray-800 w-full">
-            <!-- Placeholder for blog images -->
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
-              <span class="text-2xl">🖼️</span>
-            </div>
+            {post.image && imageMap[post.image] ? (
+              <Image
+                src={imageMap[post.image]}
+                alt={post.title}
+                class="w-full h-full object-cover"
+              />
+            ) : post.image && /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(post.image) ? (
+              <img 
+                src={`/assets/${post.image}`}
+                alt={post.title}
+                class="w-full h-full object-cover" />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+                <span class="text-2xl">🖼️</span>
+              </div>
+            )}
           </div>
           
           <div class="p-6">
@@ -84,7 +93,7 @@ const posts = [
             
             <div class="flex items-center justify-between mt-4">
               <div class="flex items-center gap-2">
-                <div class="w-7 h-7 rounded-full bg-gray-700"></div>
+                <img src="/logo/spaceman.png" alt="Astro AI Team" class="w-7 h-7 rounded-full object-cover" />
                 <span class="text-sm text-gray-400">{post.author}</span>
               </div>
               <span class="text-xs text-gray-500">{post.date}</span>
