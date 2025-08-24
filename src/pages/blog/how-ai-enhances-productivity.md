@@ -8,6 +8,9 @@ image: mind.jpg
 tags: 
   - Productivity
   - AI Tools
+description: Practical ways AI assistants automate routine tasks, improve decision making, and reduce information overload to boost daily productivity.
+excerpt: Learn how AI assistants streamline scheduling, email triage, research, and focus—so you can spend more time on creative, high‑impact work.
+keywords: AI productivity, AI assistant, workflow automation, decision support, focus tools, knowledge management, Astro AI blog
 ---
 
 # How AI Enhances Your Daily Productivity

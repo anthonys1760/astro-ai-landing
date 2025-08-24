@@ -2,12 +2,15 @@
 layout: ../../layouts/BlogPostLayout.astro
 title: How AI Supercharges Creativity and Problem Solving
 author: Astro AI Team
-date: June 15, 2025
+date: August 24, 2025
 emoji: ✨
 image: fragment.jpg
 tags: 
   - AI Technology
   - Creativity
+description: See how AI accelerates creative work—from idea generation and rapid iteration to execution—so teams can explore more and ship better.
+excerpt: AI isn’t a replacement for creativity—it’s an accelerator. Learn workflows that turn blank pages into momentum and insights into outcomes.
+keywords: AI creativity, AI assistant, creative workflow, ideation, iteration, content generation, productivity tools, Astro AI blog
 ---
 
 # How AI Supercharges Creativity and Problem Solving
