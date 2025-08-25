@@ -1,23 +1,23 @@
 ---
-import { Image } from 'astro:assets';
+import StoreBadges from './StoreBadges.astro';
 ---
 
 <section id="download" class="py-20 bg-gradient-to-r from-primary to-secondary bg-opacity-10">
   <div class="container-custom">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        Ready to Experience the Future of AI?
+        Create more with Astro AI X
       </h2>
       <p class="text-lg text-gray-200 mb-8">
-        Join the waitlist now and be the first to experience Astro AI when we launch. Transform the way you work, create, and solve problems with the power of artificial intelligence at your fingertips.
+        From ideas to code, from research to summaries—everything in one fast, beautiful app. Download on iOS or Android.
       </p>
       
-      <div class="flex justify-center mb-10">
-        <a href="/#waitlist" class="hover:opacity-90 transition-opacity mx-auto">
-          <div class="w-[180px] h-[60px] flex items-center justify-center">
-            <Image src="/logo/apple.png" alt="App Store" width={160} height={48} class="object-contain w-[160px] h-[48px]" />
-          </div>
-        </a>
+      <div class="flex justify-center mb-6">
+        <StoreBadges href="/#waitlist" />
+      </div>
+      
+      <div class="mb-10">
+        <a href="/#waitlist" class="text-sm text-gray-200 underline hover:opacity-90"></a>
       </div>
       
       <div class="flex justify-center">

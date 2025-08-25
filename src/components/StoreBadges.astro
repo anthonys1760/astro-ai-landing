@@ -1,0 +1,13 @@
+---
+interface Props {
+  href?: string;
+}
+const { href = "/#waitlist" } = Astro.props as Props;
+---
+<div class="flex items-start gap-2">
+  <a href={href} class="hover:opacity-90 transition-opacity">
+    <div class="w-[300px] h-[84px] flex items-center justify-center overflow-hidden">
+      <img src="/logo/apple.png" alt="Download on the App Store" class="w-full h-full object-contain scale-[1.30]" />
+    </div>
+  </a>
+</div>

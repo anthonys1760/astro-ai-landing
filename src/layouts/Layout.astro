@@ -10,13 +10,13 @@ interface Props {
 }
 
 const { 
-	title = 'Astro AI - Your Personal AI Assistant', 
-	description = 'Experience smart conversations with Astro AI - the next generation AI chat assistant that helps you get things done faster with natural language. Boost your productivity today.', 
-	keywords = 'AI assistant, artificial intelligence, virtual assistant, AI chatbot, personal productivity, smart assistant, AI technology, voice assistant, productivity tool, AI automation',
+	title = 'Astro AI X — Your all‑in‑one mobile AI studio', 
+	description = 'Chat, write, code, and summarize with lightning‑fast streaming and beautiful UX. Available on iOS and Android.', 
+	keywords = 'mobile AI, AI chat app, AI code assistant, AI summarizer, voice AI app, iOS AI, Android AI, multi‑model AI, AI assistant mobile, productivity AI app',
 	canonical = Astro.url.href
 } = Astro.props;
----
 
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -28,7 +28,7 @@ const {
 		
 		<!-- SEO Meta Tags -->
 		<meta name="keywords" content={keywords} />
-		<meta name="author" content="Astro AI Team" />
+		<meta name="author" content="Astro AI X Team" />
 		<meta name="robots" content="index, follow" />
 		<link rel="canonical" href={canonical} />
 		
@@ -39,14 +39,14 @@ const {
 		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://astroai.app/" />
+		<meta property="og:url" content="https://astro-ai.net/" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="/og-image.png" />
 		
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://astroai.app/" />
+		<meta property="twitter:url" content="https://astro-ai.net/" />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content="/og-image.png" />
@@ -58,7 +58,7 @@ const {
 		{
 			"@context": "https://schema.org",
 			"@type": "SoftwareApplication",
-			"name": "Astro AI",
+			"name": "Astro AI X",
 			"applicationCategory": "UtilitiesApplication",
 			"operatingSystem": "iOS, Android",
 			"offers": {
@@ -66,7 +66,7 @@ const {
 				"price": "20.00",
 				"priceCurrency": "USD"
 			},
-			"description": "Astro AI is your personal AI assistant that helps you get things done faster with natural language conversations and powerful productivity features.",
+			"description": "Astro AI X is your all‑in‑one mobile AI studio to chat, write, code, and summarize with lightning‑fast streaming and a beautiful, accessible UX.",
 			"aggregateRating": {
 				"@type": "AggregateRating",
 				"ratingValue": "4.8",
@@ -74,7 +74,7 @@ const {
 			},
 			"publisher": {
 				"@type": "Organization",
-				"name": "Astro AI",
+				"name": "Astro AI X",
 				"logo": {
 					"@type": "ImageObject",
 					"url": "https://astro-ai.net/logo/spaceman.png"
@@ -87,7 +87,7 @@ const {
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ9SK88B5W"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
+			function gtag(){dataLayer.push(arguments);} 
 			gtag('js', new Date());
 			gtag('config', 'G-ZJ9SK88B5W');
 		</script>
