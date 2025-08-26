@@ -21,9 +21,9 @@ import StoreBadges from "./StoreBadges.astro";
           <a href="/#waitlist" class="btn bg-primary/20 border border-primary/40 text-white backdrop-blur hover:bg-primary/30 hover:border-primary/60">Get Astro AI X</a>
           <a href="/#waitlist" class="btn bg-white/5 border border-white/20 text-white backdrop-blur hover:bg-white/10">Watch Demo</a>
         </div>
-        <!-- Store badges -->
-        <div class="mt-4">
-          <StoreBadges href="/#waitlist" variant="glass" />
+        <!-- Store badges: hidden on mobile, visible on lg+ -->
+        <div class="mt-4 hidden lg:block">
+          <StoreBadges href="/#waitlist" variant="glass" emphasizeBorder={true} />
         </div>
         
         
@@ -41,6 +41,11 @@ import StoreBadges from "./StoreBadges.astro";
           />
         </div>
         
+        <!-- Mobile store badges under phone -->
+        <div class="mt-6 flex justify-center lg:hidden">
+          <StoreBadges href="/#waitlist" variant="glass" emphasizeBorder={true} />
+        </div>
+
         <!-- Glowing background effect -->
         <div class="hidden absolute -top-10 -right-10 w-96 h-96 bg-primary rounded-full opacity-30 blur-3xl mix-blend-screen animate-float-slow"></div>
         <div class="hidden absolute -bottom-10 -left-10 w-96 h-96 bg-secondary rounded-full opacity-30 blur-3xl mix-blend-screen animate-float-slower-reverse"></div>
