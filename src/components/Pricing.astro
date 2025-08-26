@@ -29,34 +29,29 @@
           btnText: "Get Started",
         },
         {
-          name: "Premium",
+          name: "Pro",
           price: "$20.00",
           period: "per month",
           description: "Ideal for daily AI assistance",
           features: [
-            "Unlimited AI queries",
+            "300 premium messages/month",
+            "Unlimited usage on Claude Haiku 3.5, GPT‑4o, Gemini 2.5 Flash, and Perplexity Sonar",
+            "Priority support",
             "Advanced AI models",
-            "Priority response time",
-            "All platforms access",
-            "Custom AI training",
-            "Early access to new features",
           ],
           highlight: true,
-          btnText: "Go Premium",
+          btnText: "Go Pro",
         },
         {
-          name: "Team",
-          price: "$49.99",
+          name: "Pro Plus",
+          price: "$35",
           period: "per month",
           description: "For teams and businesses",
           features: [
-            "Everything in Premium",
-            "Up to 5 team members",
-            "Shared workspaces",
-            "Team analytics",
-            "Admin controls",
-            "API access",
-            "Dedicated support",
+            "1000 premium messages/month",
+            "Unlimited usage on Claude Haiku 3.5, GPT4o, Gemini 2.5 Flash, and Perplexity Sonar",
+            "Priority support",
+            "Maximum limits + priority access",
           ],
           highlight: false,
           btnText: "Contact Sales",
@@ -86,7 +81,7 @@
             <ul class="space-y-3">
               {plan.features.map(feature => (
                 <li class="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
                   <span class="text-gray-300">{feature}</span>
