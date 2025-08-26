@@ -54,3 +54,59 @@ h1, h2, h3, h4, h5, h6 {
   color: transparent;
   background-image: linear-gradient(to right, #6c5ce7, #a29bfe);
 }
+
+/* Subtle floating animation for hero background blobs */
+@keyframes floatBlob {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate3d(24px, -36px, 0) scale(1.06);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.2;
+  }
+}
+
+.animate-float-slow {
+  animation: floatBlob 6s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-float-slower-reverse {
+  animation: floatBlob 9s ease-in-out infinite reverse;
+  will-change: transform, opacity;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-slower-reverse {
+    animation: none !important;
+  }
+}
+
+/* Animated gradient background for hero */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-animated-gradient {
+  background-image:
+    radial-gradient(900px 900px at 10% 20%, rgba(108, 92, 231, 0.34), rgba(108,92,231,0) 60%),
+    radial-gradient(800px 800px at 85% 15%, rgba(164, 126, 255, 0.22), rgba(164,126,255,0) 60%),
+    linear-gradient(120deg, rgba(108,92,231,0.24), rgba(255,64,129,0.10), rgba(0,212,255,0.08));
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease-in-out infinite;
+  opacity: 0.6;
+  filter: saturate(120%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animated-gradient { animation: none; }
+}

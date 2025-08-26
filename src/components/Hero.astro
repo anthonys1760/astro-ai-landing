@@ -3,8 +3,10 @@ import Button from "./Button.astro";
 import StoreBadges from "./StoreBadges.astro";
 ---
 
-<section class="py-20 overflow-hidden">
-  <div class="container-custom">
+<section class="py-20 overflow-hidden relative">
+  <!-- Animated gradient background layer -->
+  <div class="absolute inset-0 hero-animated-gradient pointer-events-none"></div>
+  <div class="container-custom relative z-10">
     <div class="grid lg:grid-cols-2 items-center gap-12">
       <div>
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
@@ -40,8 +42,8 @@ import StoreBadges from "./StoreBadges.astro";
         </div>
         
         <!-- Glowing background effect -->
-        <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary rounded-full opacity-20 blur-3xl"></div>
-        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary rounded-full opacity-20 blur-3xl"></div>
+        <div class="hidden absolute -top-10 -right-10 w-96 h-96 bg-primary rounded-full opacity-30 blur-3xl mix-blend-screen animate-float-slow"></div>
+        <div class="hidden absolute -bottom-10 -left-10 w-96 h-96 bg-secondary rounded-full opacity-30 blur-3xl mix-blend-screen animate-float-slower-reverse"></div>
       </div>
     </div>
   </div>
