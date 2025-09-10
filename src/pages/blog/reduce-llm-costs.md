@@ -4,7 +4,7 @@ title: "The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank
 author: Astro AI Team
 date: September 2, 2025
 emoji: 💸
-image: mind.jpg
+image: digital-world.jpg
 tags:
   - LLM
   - Token Costs
