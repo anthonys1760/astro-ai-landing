@@ -14,23 +14,32 @@ const imageMap: Record<string, any> = {
 
 // Dynamically load blog posts from markdown files in this directory
 const modules = import.meta.glob('./*.md');
-const posts = await Promise.all(
-  Object.entries(modules).map(async ([path, resolver]) => {
-    const mod: any = await resolver();
-    const fm = mod.frontmatter || {};
-    // derive slug from file path ./file.md -> file
-    const slug = path.replace('./', '').replace('.md', '');
-    return {
-      slug,
-      title: fm.title || slug,
-      excerpt: fm.excerpt || '',
-      date: fm.date || '',
-      author: fm.author || 'Astro AI Team',
-      image: fm.image || '',
-      tags: fm.tags || [],
-    };
-  })
-);
+const posts = (
+  await Promise.all(
+    Object.entries(modules).map(async ([path, resolver]) => {
+      const mod: any = await resolver();
+      const fm = mod.frontmatter || {};
+      // derive slug from file path ./file.md -> file
+      const slug = path.replace('./', '').replace('.md', '');
+      return {
+        slug,
+        title: fm.title || slug,
+        excerpt: fm.excerpt || '',
+        date: fm.date || '',
+        author: fm.author || 'Astro AI Team',
+        image: fm.image || '',
+        tags: fm.tags || [],
+      };
+    })
+  )
+).sort((a, b) => {
+  const da = new Date(a.date as string).getTime();
+  const db = new Date(b.date as string).getTime();
+  if (isNaN(da) && isNaN(db)) return 0;
+  if (isNaN(da)) return 1;
+  if (isNaN(db)) return -1;
+  return db - da;
+});
 ---
 
 <Layout 
@@ -107,8 +116,8 @@ const posts = await Promise.all(
       <p class="text-gray-300">
         Stay tuned for more content about AI technology and Astro AI features!
       </p>
-      <a href="/#waitlist" class="btn btn-primary inline-block mt-4">
-        Join our waitlist for updates
+      <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="btn btn-primary inline-block mt-4">
+        Download on iOS
       </a>
       </div>
     </main>

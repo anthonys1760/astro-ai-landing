@@ -183,7 +183,7 @@ Smartphones are the perfect multimodal AI platform:
 
 The shift to multimodal AI isn't just about new features—it's about AI assistants that work with the world as we experience it: rich, visual, auditory, and interconnected.
 
-Ready to experience multimodal AI capabilities? Join the Astro AI waitlist for early access to vision and voice features: [Get started](/#waitlist).
+Ready to experience multimodal AI capabilities? Download the Astro AI app on iOS to get vision and voice features as they roll out: [Download on iOS](https://apps.apple.com/us/app/astroai-x/id6748281772).
 
 ---
 

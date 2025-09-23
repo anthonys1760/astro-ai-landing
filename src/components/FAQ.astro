@@ -1,0 +1,72 @@
+---
+const faqs: { question: string; answer: string }[] = [
+  {
+    question: 'What is Astro AI X?',
+    answer:
+      'Astro AI X is a fast, beautiful mobile AI app that helps you chat, search, write, and code using cutting‑edge models with ultra‑fast streaming.',
+  },
+  {
+    question: 'Which AI models does it use?',
+    answer:
+      'Astro AI utilizes advanced AI models such as OpenAI GPT‑5, DeepSeek R1, Grok 4, Claude Opus 4, and Gemini 2.5 Pro, among others. We automatically pick great defaults and let you switch when needed.',
+  },
+  {
+    question: 'Which platforms are supported?',
+    answer:
+      'Astro AI is available as a native app for both iPhone and Android devices.',
+  },
+  {
+    question: 'Is my data private?',
+    answer:
+      'Yes. Your data is prioritized with strong privacy practices. See our Privacy Policy for details.',
+  },
+  {
+    question: 'How much does it cost?',
+    answer:
+      'You can start for free and upgrade to a paid plan for higher limits and advanced features. See pricing above for details.',
+  },
+];
+---
+<section id="faq" class="py-20 bg-dark-light">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3">
+        <span class="gradient-text">Frequently asked questions</span>
+      </h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Answers to common questions about Astro AI X.
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto divide-y divide-white/10 rounded-2xl bg-dark overflow-hidden">
+      {faqs.map((item, i) => (
+        <details class="group" open={i === 0}>
+          <summary
+            class="flex items-start justify-between w-full cursor-pointer select-none px-6 py-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
+          >
+            <div>
+              <h3 class="text-base md:text-lg font-semibold text-white">
+                {item.question}
+              </h3>
+              <p class="mt-2 text-sm md:text-base text-gray-300 group-open:block hidden">
+                {item.answer}
+              </p>
+            </div>
+            <svg
+              class="ml-4 mt-1 h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </summary>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

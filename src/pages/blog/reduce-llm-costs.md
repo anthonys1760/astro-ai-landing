@@ -145,7 +145,7 @@ Reduce p and r by 30% each and you’ll often cut spend by ~50% when combined wi
 - Caching and right-sized models multiply savings.
 - Guardrails prevent surprise bills.
 
-If you want a cost-aware, reliable personal AI assistant, try Astro AI and join the waitlist: [Get early access](/#waitlist).
+If you want a cost-aware, reliable personal AI assistant, try Astro AI and download the iOS app: [Download on iOS](https://apps.apple.com/us/app/astroai-x/id6748281772).
 
 ---
 

@@ -1,10 +1,12 @@
 ---
 interface Props {
   href?: string;
+  iosHref?: string;
+  androidHref?: string;
   variant?: 'solid' | 'outline' | 'glass';
   emphasizeBorder?: boolean;
 }
-const { href = "/#waitlist", variant = 'solid', emphasizeBorder = false } = Astro.props as Props;
+const { href = "/#waitlist", iosHref = href, androidHref = href, variant = 'solid', emphasizeBorder = false } = Astro.props as Props;
 
 const badgeBase = `group inline-flex items-center gap-3 rounded-xl px-4 py-3 w-full h-[68px] sm:w-[260px] sm:h-[76px] md:w-[300px] md:h-[84px] transition-all border`;
 const badgeSolid = `bg-black text-white border-white/10 hover:opacity-90 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]`;
@@ -23,7 +25,7 @@ const gradId = 'gpGrad-' + Math.random().toString(36).slice(2, 8);
 ---
 <div class="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 sm:gap-4 w-full">
   <!-- App Store badge -->
-  <a href={href} class={outer}>
+  <a href={iosHref} class={outer}>
     <span class={inner}>
       <span class={`${iconBase} ${variant === 'outline' || variant === 'glass' ? iconOutline : iconSolid}`}>
       <!-- Apple logo -->
@@ -39,7 +41,7 @@ const gradId = 'gpGrad-' + Math.random().toString(36).slice(2, 8);
   </a>
 
   <!-- Google Play badge -->
-  <a href={href} class={outer}>
+  <a href={androidHref} class={outer}>
     <span class={inner}>
       <span class={`${iconBase} ${variant === 'outline' || variant === 'glass' ? iconOutline : iconSolid}`}>
       <!-- Google Play icon -->

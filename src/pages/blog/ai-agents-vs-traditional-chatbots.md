@@ -61,7 +61,7 @@ Most of us started with chatbots—single‑turn Q&A systems that answer questio
 - Document processing: extract → transform → draft
 - Personal CRM reminders and follow‑ups
 
-If you’d like early access to our agent features, **join the waitlist**: [Get started](/#waitlist).
+If you’d like to try our agent features, **download the app on iOS**: [Download on iOS](https://apps.apple.com/us/app/astroai-x/id6748281772).
 
 ## When to Use Which
 
@@ -93,7 +93,7 @@ Think of a chatbot as a helpful advisor in a chat thread. Think of an agent as a
 
 Agents are moving from novelty to necessity. As tool ecosystems and on‑device inference improve, agents will feel faster, more private, and more reliable—especially on mobile.
 
-If you’re curious how agents can streamline your work, try Astro AI and **join the waitlist** for early features: [Join now](/#waitlist).
+If you’re curious how agents can streamline your work, try Astro AI and **download the iOS app**: [Download on iOS](https://apps.apple.com/us/app/astroai-x/id6748281772).
 
 ---
 
