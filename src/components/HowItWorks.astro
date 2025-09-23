@@ -4,10 +4,10 @@
   <div class="container-custom">
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        <span class="gradient-text">How Astro AI X Works</span>
+        <span class="gradient-text">How Astro AI Works</span>
       </h2>
       <p class="text-gray-300 max-w-2xl mx-auto">
-        See value first—then sign up. A streamlined first‑run flow that gets you creating fast.
+        Astro AI is a multi‑model agent that understands your intent, routes tasks to the best AI models and tools, and keeps your context intact across steps.
       </p>
     </div>
     
@@ -19,18 +19,18 @@
         {[
           {
             step: "01",
-            title: "Onboarding",
-            description: "Start with a simple, frictionless intro before auth. Social sign‑ins ready when you are."
+            title: "Intent Understanding",
+            description: "Astro parses your prompt, detects the task (research, code, writing, analysis), checks safety, and pulls relevant context from the thread and files."
           },
           {
             step: "02",
-            title: "Choose Your Mode",
-            description: "Chat, Writing, Code, or Summarize. Switch models and agents for different tasks."
+            title: "Smart Routing",
+            description: "It selects the best model (GPT 5, Claude Opus 4, Gemini 2.5 Pro, DeepSeek, Perplexity) and tools (Web, Files, Personas). Switch models mid-chat without losing context."
           },
           {
             step: "03",
-            title: "Create & Share",
-            description: "Chat or generate, then export or share. Fast streaming, reliable results, and TTS for summaries."
+            title: "Execute & Learn",
+            description: "Runs the calls, summarizes results with citations, and caches insights for follow-ups. Export, share, or continue iterating—your context stays with you."
           }
         ].map((item, index) => (
           <div class="bg-dark-light p-8 rounded-xl relative z-10">
@@ -54,8 +54,8 @@
             class="w-full max-w-[360px] lg:max-w-[380px] h-auto rounded-3xl"
             loading="lazy"
           />
-          <h4 class="mt-4 text-lg font-semibold">Chat</h4>
-          <p class="text-gray-300 text-sm max-w-[320px]">Converse with multiple models, keep context, and get fast, reliable replies with beautiful streaming.</p>
+          <h4 class="mt-4 text-lg font-semibold">Multi‑Model Chat</h4>
+          <p class="text-gray-300 text-sm max-w-[320px]">Seamlessly switch models in one thread. Personas, citations, and fast streaming keep you in flow.</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <img
@@ -64,8 +64,8 @@
             class="w-full max-w-[360px] lg:max-w-[380px] h-auto rounded-3xl"
             loading="lazy"
           />
-          <h4 class="mt-4 text-lg font-semibold">Speak</h4>
-          <p class="text-gray-300 text-sm max-w-[320px]">Draft, rewrite, and polish content with tone controls—plus voice chat in real time using TTS and speech‑to‑speech technology.</p>
+          <h4 class="mt-4 text-lg font-semibold">Voice & Realtime</h4>
+          <p class="text-gray-300 text-sm max-w-[320px]">Low‑latency voice with TTS and speech‑to‑speech. Dictate, review, and iterate hands‑free.</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <img
@@ -74,8 +74,8 @@
             class="w-full max-w-[360px] lg:max-w-[380px] h-auto rounded-3xl"
             loading="lazy"
           />
-          <h4 class="mt-4 text-lg font-semibold">Code</h4>
-          <p class="text-gray-300 text-sm max-w-[320px]">Generate snippets, fix bugs, and explain code with inline tips and copy-ready output.</p>
+          <h4 class="mt-4 text-lg font-semibold">Files & Tools</h4>
+          <p class="text-gray-300 text-sm max-w-[320px]">Upload docs and code, search the web, and get structured outputs. Your context stays attached to every step.</p>
         </div>
       </div>
     </div>

@@ -8,36 +8,59 @@
         <span class="gradient-text">Feature Highlights</span>
       </h2>
       <p class="text-gray-300 max-w-2xl mx-auto">
-        Your all‑in‑one toolkit to chat, write, code, and summarize with ultra‑fast streaming and a beautiful, accessible UI.
+        Real, practical tools that make Astro AI your everyday multi‑model assistant—fast streaming, model switching, web+files, and more.
       </p>
     </div>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
         {
-          icon: "⚡",
-          title: "Fast Streaming",
-          description: "Near‑instant responses with smooth, reliable chunking. No cut‑offs. No waiting."
+          icon: "sparkles",
+          title: "Multi‑Model Chat",
+          description: "Switch between GPT 5, Claude Opus 4, Gemini 2.5 Pro, and more—without losing context."
         },
         {
-          icon: "⌨️",
-          title: "Code Assistant",
-          description: "Generate, explain, fix bugs, and optimize with purpose‑built tools. ⌨️ 💡 🐛 🚀"
+          icon: "globe",
+          title: "Web Search + Citations",
+          description: "Search the web in‑chat and get sources attached to every answer."
         },
         {
-          icon: "📝",
-          title: "Summarize Anything",
-          description: "Turn long reads into key insights with optional tap‑to‑speak playback."
+          icon: "folder",
+          title: "Files & OCR",
+          description: "Upload docs, PDFs, and images. Extract text and ask questions with full context."
         },
         {
-          icon: "🎙️",
-          title: "Live Voice Chat (Beta)",
-          description: "Talk hands‑free with real‑time speech‑to‑speech output. Marked as Beta as we continually improve."
+          icon: "mic",
+          title: "Voice & Realtime",
+          description: "Low‑latency voice, TTS, and speech‑to‑speech for hands‑free collaboration."
         }
       ].map(feature => (
         <div class="bg-dark p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-dark-light mb-4 text-2xl">
-            {feature.icon}
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 border border-white/10 mb-4">
+            {feature.icon === 'sparkles' && (
+              <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M5 12l1.2-2.4L8.6 8l-2.4-1.2L5 4.4 3.8 6.8 1.4 8l2.4 1.2L5 12z"/>
+                <path d="M13 6l1.5 3 3 1.5-3 1.5L13 15l-1.5-3L8.5 10.5 11.5 9 13 6z"/>
+                <path d="M19 14l.8 1.8L21.6 16l-1.8.8L19 18.6l-.8-1.8L16.4 16l1.8-.8L19 14z"/>
+              </svg>
+            )}
+            {feature.icon === 'globe' && (
+              <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/>
+              </svg>
+            )}
+            {feature.icon === 'folder' && (
+              <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+              </svg>
+            )}
+            {feature.icon === 'mic' && (
+              <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="9" y="3" width="6" height="10" rx="3"/>
+                <path d="M5 11a7 7 0 0014 0M12 18v3"/>
+              </svg>
+            )}
           </div>
           <h3 class="text-xl font-semibold mb-2">{feature.title}</h3>
           <p class="text-gray-300">{feature.description}</p>

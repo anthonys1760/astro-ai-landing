@@ -5,8 +5,8 @@ interface Props {
 }
 
 const { 
-  title = "Join the Waitlist",
-  subtitle = "Be the first to know when Astro AI launches. Early access members will receive premium features for free."
+  title = "Android Users: Join the Waitlist",
+  subtitle = "Be the first to know when Astro AI launches on Android. iOS is available now; Android early access members receive premium features for free."
 } = Astro.props;
 ---
 
@@ -58,32 +58,8 @@ const {
             >
           </div>
           
-          <div class="py-4 my-4">
-            <label class="block text-base font-medium text-gray-300 mb-5">Device Preference</label>
-            <div class="flex flex-col sm:flex-row sm:justify-center gap-8 sm:gap-12 py-2">
-              <div class="flex items-center">
-                <input 
-                  type="radio" 
-                  id="android" 
-                  name="devicePreference" 
-                  value="Android"
-                  class="w-5 h-5 text-primary bg-dark-light border-gray-700 focus:ring-primary"
-                  required
-                >
-                <label for="android" class="ml-3 text-base font-medium text-gray-300">Android</label>
-              </div>
-              <div class="flex items-center">
-                <input 
-                  type="radio" 
-                  id="iphone" 
-                  name="devicePreference" 
-                  value="iPhone"
-                  class="w-5 h-5 text-primary bg-dark-light border-gray-700 focus:ring-primary"
-                >
-                <label for="iphone" class="ml-3 text-base font-medium text-gray-300">iPhone</label>
-              </div>
-            </div>
-          </div>
+          <!-- Device preference is implicitly Android for this waitlist -->
+          <input type="hidden" name="devicePreference" value="Android" />
 
           <div class="flex items-start py-4 my-2">
             <div class="flex items-center h-6">
