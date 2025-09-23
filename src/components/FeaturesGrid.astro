@@ -1,0 +1,94 @@
+---
+// A six-card feature grid matching the provided design and site theme.
+---
+
+<section class="py-20 bg-dark">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white">
+        <span class="gradient-text">Upload Files, Search the Web, Generate Blog Images and Product Videos, All Inside Chat</span>
+      </h2>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {[
+        {
+          title: 'Model Switching Mid‑Chat',
+          desc: 'Change between AI models instantly without losing context.',
+          icon: 'image'
+        },
+        {
+          title: 'Reusable Personas',
+          desc: 'Create once. Apply across all AI models with a click.',
+          icon: 'user-circle'
+        },
+        {
+          title: 'In‑Chat Document Editor',
+          desc: 'Write, edit, and export full docs right inside chat.',
+          icon: 'document'
+        },
+        {
+          title: 'Prompt Enhancer',
+          desc: 'Auto‑upgrades vague prompts to high‑quality inputs.',
+          icon: 'sparkles'
+        },
+        {
+          title: 'Team Collaboration',
+          desc: 'Invite teammates, share chats, set access roles.',
+          icon: 'users'
+        },
+        {
+          title: 'Integrated Web + Files',
+          desc: 'Search the web or upload files directly into chats.',
+          icon: 'folder'
+        }
+      ].map((item) => (
+        <div class="rounded-xl bg-dark-light border border-gray-800 p-6 shadow-md">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/5 border border-white/10">
+            {item.icon === 'image' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="14" rx="2"/>
+                <path d="M8 13l3-3 5 5"/>
+                <circle cx="9" cy="9" r="1.5"/>
+              </svg>
+            )}
+            {item.icon === 'user-circle' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="8" r="3.5"/>
+                <path d="M4 20a8 8 0 0 1 16 0"/>
+              </svg>
+            )}
+            {item.icon === 'document' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+                <path d="M14 3v6h6"/>
+              </svg>
+            )}
+            {item.icon === 'sparkles' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M5 12l1.2-2.4L8.6 8l-2.4-1.2L5 4.4 3.8 6.8 1.4 8l2.4 1.2L5 12z"/>
+                <path d="M13 6l1.5 3 3 1.5-3 1.5L13 15l-1.5-3L8.5 10.5 11.5 9 13 6z"/>
+                <path d="M19 14l.8 1.8L21.6 16l-1.8.8L19 18.6l-.8-1.8L16.4 16l1.8-.8L19 14z"/>
+              </svg>
+            )}
+            {item.icon === 'users' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="9" cy="8" r="3"/>
+                <path d="M2 20a7 7 0 0 1 14 0"/>
+                <circle cx="18" cy="10" r="2.5"/>
+                <path d="M17 20a5 5 0 0 1 5-5"/>
+              </svg>
+            )}
+            {item.icon === 'folder' && (
+              <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
+              </svg>
+            )}
+          </div>
+          <h3 class="text-white font-semibold text-lg">{item.title}</h3>
+          <p class="text-gray-300 mt-2 text-sm">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
