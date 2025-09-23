@@ -9,15 +9,58 @@ import StoreBadges from "./StoreBadges.astro";
   <div class="container-custom relative z-10">
     <div class="grid lg:grid-cols-2 items-center gap-12">
       <div>
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="gradient-text block">Your all‑in‑one mobile AI studio</span>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">
+          <span class="gradient-text block">All Your Preferred AI Models in One Conversation for the Cost of a Single ChatGPT Subscription</span>
         </h1>
         
         <p class="text-lg text-gray-300 mb-8">
           Astro AI utilizes advanced AI models such as OpenAI GPT-5, DeepSeek R1, Grok 4, Claude Opus 4, and Gemini 2.5 Pro, among others, to improve your chatting, searching, writing, and coding experiences. It is available as an app for both iPhone and Android devices.
         </p>
         
-        <div class="flex flex-wrap gap-4 mb-6">
+        <!-- Trust/feature highlights under text -->
+        <div class="mt-2 sm:mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <!-- Private Data -->
+          <div class="flex items-start gap-3">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 10V7a5 5 0 0 1 10 0v3" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="10" width="16" height="10" rx="2" ry="2"/>
+            </svg>
+            <div>
+              <div class="font-semibold text-white">Private Data</div>
+              <div class="text-sm text-gray-400">Models never trained on your chats.</div>
+            </div>
+          </div>
+          
+          <!-- Invite-Only -->
+          <div class="flex items-start gap-3">
+            <!-- Sparkles / Magic Wand Icon -->
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <!-- Wand -->
+              <path d="M4 20l8-8" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="10.5" y="5.5" width="3" height="3" transform="rotate(45 12 7)"/>
+              <!-- Sparkles -->
+              <path d="M16 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2Z"/>
+              <path d="M20 12l.6 1.4L22 14l-1.4.6L20 16l-.6-1.4L18 14l1.4-.6L20 12Z"/>
+            </svg>
+            <div>
+              <div class="font-semibold text-white">Multi-Model Chat</div>
+              <div class="text-sm text-gray-400">Seamlessly switch between top models in one thread.</div>
+            </div>
+          </div>
+          
+          <!-- 100% Secure -->
+          <div class="flex items-start gap-3">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3l7 4v5c0 5-3.5 9-7 9s-7-4-7-9V7l7-4Z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <div class="font-semibold text-white">100% Secure</div>
+              <div class="text-sm text-gray-400">Built for regulated teams and orgs.</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap gap-4 mt-6 mb-6">
           <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="btn bg-primary/20 border border-primary/40 text-white backdrop-blur hover:bg-primary/30 hover:border-primary/60" target="_blank" rel="noopener noreferrer">Get Astro AI X</a>
           <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="btn bg-white/5 border border-white/20 text-white backdrop-blur hover:bg-white/10" target="_blank" rel="noopener noreferrer">Download on iOS</a>
         </div>
@@ -42,7 +85,7 @@ import StoreBadges from "./StoreBadges.astro";
           <img 
             src="/astro-ai.png" 
             alt="Astro AI App Screenshot" 
-            class="w-full max-w-[420px] sm:max-w-[500px] md:max-w-[560px] lg:max-w-[500px] xl:max-w-[540px] h-auto" 
+            class="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[360px] xl:max-w-[380px] h-auto" 
           />
         </div>
         

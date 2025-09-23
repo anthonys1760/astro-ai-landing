@@ -1,0 +1,93 @@
+---
+// MultiModelShowcase: Two-column section with placeholder image on the left
+// and headline + bullet points on the right, matching the dark theme.
+---
+
+<section class="py-20 bg-dark">
+  <div class="container-custom">
+    <div class="grid gap-10 lg:gap-16 lg:grid-cols-2 items-center">
+      <!-- Left: Demo video -->
+      <div class="relative order-2 lg:order-1">
+        <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden shadow-xl max-w-[260px] sm:max-w-[320px] lg:max-w-[380px] mx-auto">
+          <video
+            src="/logo/0923.mov"
+            class="w-full h-auto block"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <!-- Glow accents -->
+        <div class="pointer-events-none absolute -top-6 -left-6 w-40 h-40 bg-primary/30 blur-3xl rounded-full"></div>
+        <div class="pointer-events-none absolute -bottom-8 -right-8 w-40 h-40 bg-secondary/30 blur-3xl rounded-full"></div>
+      </div>
+
+      <!-- Right: Copy -->
+      <div class="order-1 lg:order-2">
+        <div class="text-sm font-semibold text-primary mb-2">Multiple AI Models in a Single Chat</div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight text-white">
+          Start with GPT 5, Clarify with Claude Opus 4,
+          <span class="block">Optimize with DeepSeek</span>
+        </h2>
+        <p class="text-gray-300 mt-2 italic">(without losing any context)</p>
+        <p class="text-gray-300 mt-4">
+          Many tools force you to restart when switching models. Astro AI keeps your full
+          conversation history intact—even as you change AI engines—so you can mix strengths
+          and get better outcomes.
+        </p>
+
+        <!-- Bulleted feature list -->
+        <ul class="mt-6 space-y-4">
+          <li class="flex gap-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/10 overflow-hidden">
+              <img src="/logo/chat-gpt-logo-vector-black-3ded.png" alt="GPT 5 Logo" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
+            <div>
+              <div class="text-white font-semibold">GPT 5</div>
+              <div class="text-gray-400 text-sm">State‑of‑the‑art reasoning and generation across text, images, and tools.</div>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/10 overflow-hidden">
+              <img src="/logo/claude-ai-icon-65aa.png" alt="Claude Opus 4 Logo" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
+            <div>
+              <div class="text-white font-semibold">Claude Opus 4</div>
+              <div class="text-gray-400 text-sm">Exceptional at complex reasoning, long‑context summarization, and clarity.</div>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/10 overflow-hidden">
+              <img src="/logo/gemini.png" alt="Gemini Logo" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
+            <div>
+              <div class="text-white font-semibold">Gemini 2.5 Pro</div>
+              <div class="text-gray-400 text-sm">Great for code understanding, debugging, and multimodal analysis.</div>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/10 overflow-hidden">
+              <img src="/logo/deep-seek-logo-whale-1ced.png" alt="DeepSeek Logo" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
+            <div>
+              <div class="text-white font-semibold">DeepSeek</div>
+              <div class="text-gray-400 text-sm">Strong long‑form writing, step‑by‑step reasoning, and structure.</div>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/10 overflow-hidden">
+              <img src="/logo/Perplexity-Emblem.png" alt="Perplexity Logo" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
+            <div>
+              <div class="text-white font-semibold">Perplexity</div>
+              <div class="text-gray-400 text-sm">Real‑time web research with citations and concise summaries.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
