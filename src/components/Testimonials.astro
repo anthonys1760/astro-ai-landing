@@ -1,4 +1,13 @@
 ---
+// Map testimonial names to avatar image paths in public/logo
+const avatarMap: Record<string, string> = {
+  'Alex Johnson': '/logo/alex-johnson.jpg',
+  'Sarah Williams': '/logo/sarah-williams.jpg',
+  'Michael Chen': '/logo/michael-chen.jpg',
+  'Emily Rodriguez': '/logo/emily-rodriguez.jpg',
+  'David Kim': '/logo/david-kim.jpg', // fallback if added later
+  'Olivia Taylor': '/logo/olivia-taylor.jpg',
+};
 ---
 
 <section class="py-20 bg-dark-light">
@@ -48,16 +57,27 @@
         <div class="bg-dark p-6 rounded-xl">
           <div class="flex items-start mb-4">
             {Array(5).fill(0).map(() => (
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#6c5ce7" stroke="none">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#6c5ce7" stroke="none">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
             ))}
           </div>
           <p class="text-gray-300 mb-6 italic">"{ testimonial.quote }"</p>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-sm">
-              {testimonial.name.charAt(0)}
-            </div>
+            {avatarMap[testimonial.name] ? (
+              <img
+                src={avatarMap[testimonial.name]}
+                alt={`${testimonial.name}, ${testimonial.role}`}
+                title={`${testimonial.name} — ${testimonial.role}`}
+                class="w-10 h-10 rounded-full object-cover ring-1 ring-white/10"
+                loading="lazy"
+                decoding="async"
+              />
+            ) : (
+              <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-sm">
+                {testimonial.name.charAt(0)}
+              </div>
+            )}
             <div>
               <h4 class="font-medium">{testimonial.name}</h4>
               <p class="text-sm text-gray-400">{testimonial.role}</p>
