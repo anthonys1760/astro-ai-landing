@@ -20,6 +20,17 @@ const description = frontmatter.description || frontmatter.excerpt || `Read ${fr
 const imageMap = {
   'astronaut-in-space': astronautImage,
 };
+
+// Build absolute URLs for page and image for structured data
+const site = Astro.site?.href || 'https://astro-ai.net/';
+const pageUrl = new URL(Astro.url.pathname, site).toString();
+const imageUrl = frontmatter.image
+  ? (imageMap[frontmatter.image]?.src
+      ? new URL(imageMap[frontmatter.image].src, site).toString()
+      : (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image)
+          ? new URL(`/assets/${frontmatter.image}`, site).toString()
+          : undefined))
+  : undefined;
 ---
 
 <Layout title={`${frontmatter.title} - Astro AI Blog`} description={description} keywords={frontmatter.keywords || keywords}>
@@ -77,6 +88,30 @@ const imageMap = {
     <article class="blog-content">
       <slot />
     </article>
+    
+    <!-- BlogPosting structured data -->
+    <script type="application/ld+json">{JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": pageUrl,
+      "headline": frontmatter.title,
+      "description": description,
+      "image": imageUrl ? [imageUrl] : undefined,
+      "author": {
+        "@type": "Person",
+        "name": frontmatter.author || "Astro AI X Team"
+      },
+      "datePublished": frontmatter.date,
+      "dateModified": frontmatter.updated || frontmatter.date,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Astro AI X",
+        "logo": {
+          "@type": "ImageObject",
+          "url": new URL('/logo/spaceman.png', site).toString()
+        }
+      }
+    })}</script>
     
     <style>
       .blog-content {

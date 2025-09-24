@@ -26,6 +26,23 @@ const faqs: { question: string; answer: string }[] = [
       'You can start for free and upgrade to a paid plan for higher limits and advanced features. See pricing above for details.',
   },
 ];
+
+// Build FAQPage structured data
+const site = Astro.site?.href || 'https://astro-ai.net/';
+const pageUrl = new URL(Astro.url.pathname, site).toString();
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+  mainEntityOfPage: pageUrl,
+};
 ---
 <section id="faq" class="py-20 bg-dark-light">
   <div class="container-custom">
@@ -68,5 +85,8 @@ const faqs: { question: string; answer: string }[] = [
         </details>
       ))}
     </div>
+    
+    <!-- FAQPage structured data -->
+    <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
   </div>
 </section>
