@@ -18,7 +18,7 @@ keywords: LLM costs, token optimization, reduce AI costs, prompt engineering, co
 
 # The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank
 
-Large Language Models are incredible at reasoning with context: emails, docs, notes, knowledge bases. But that context is not free—every token you send (and receive) is billed. For teams experimenting with AI assistants, costs can rise quietly and then all at once.
+Large Language Models are incredible at reasoning with context: emails, docs, notes, knowledge bases. But that context is not free—every token you send (and receive) is billed. For teams and individuals experimenting with AI assistants, costs can rise quietly and then all at once.
 
 This guide shows how to control spend without sacrificing quality. It’s the pragmatic playbook we use when building and operating AI assistants.
 
