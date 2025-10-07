@@ -6,6 +6,7 @@ import { Image } from 'astro:assets';
 
 // Import featured image for the blog post
 import astronautImage from '../assets/astronaut-in-space.jpg';
+import onDeviceImage from '../assets/on-device-ai.jpg';
 
 const { frontmatter } = Astro.props;
 
@@ -19,6 +20,7 @@ const description = frontmatter.description || frontmatter.excerpt || `Read ${fr
 // Map image names to imported assets
 const imageMap = {
   'astronaut-in-space': astronautImage,
+  'on-device-ai': onDeviceImage,
 };
 
 // Build absolute URLs for page and image for structured data
