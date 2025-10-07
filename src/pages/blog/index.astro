@@ -6,10 +6,12 @@ import { Image } from 'astro:assets';
 
 // Import featured image assets to mirror BlogPostLayout mapping
 import astronautImage from '../../assets/astronaut-in-space.jpg';
+import onDeviceImage from '../../assets/on-device-ai.jpg';
 
 // Map image names (from frontmatter `image`) to imported assets
 const imageMap: Record<string, any> = {
   'astronaut-in-space': astronautImage,
+  'on-device-ai': onDeviceImage,
 };
 
 // Dynamically load blog posts from markdown files in this directory
