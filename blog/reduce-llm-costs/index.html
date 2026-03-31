@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Learn practical, battle-tested techniques to reduce LLM costs while improving reliability: context budgeting, caching, summaries, retrieval, and more."><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="/logo/spaceman.png"><meta name="generator" content="Astro v5.13.3"><!-- SEO Meta Tags --><meta name="keywords" content="LLM costs, token optimization, reduce AI costs, prompt engineering, context window, RAG, caching for LLMs, Astro AI blog"><meta name="author" content="Astro AI X Team"><meta name="robots" content="index, follow"><link rel="canonical" href="https://astro-ai.net/blog/reduce-llm-costs/"><!-- Font preloads --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://astro-ai.net/"><meta property="og:title" content="The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank - Astro AI Blog"><meta property="og:description" content="Learn practical, battle-tested techniques to reduce LLM costs while improving reliability: context budgeting, caching, summaries, retrieval, and more."><meta property="og:image" content="/og-image.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://astro-ai.net/"><meta property="twitter:title" content="The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank - Astro AI Blog"><meta property="twitter:description" content="Learn practical, battle-tested techniques to reduce LLM costs while improving reliability: context budgeting, caching, summaries, retrieval, and more."><meta property="twitter:image" content="/og-image.png"><title>The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank - Astro AI Blog</title><!-- Structured Data Schema (JSON-LD) --><script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "SoftwareApplication",
+			"name": "Astro AI X",
+			"applicationCategory": "UtilitiesApplication",
+			"operatingSystem": "iOS, Android",
+			"offers": {
+				"@type": "Offer",
+				"price": "20.00",
+				"priceCurrency": "USD"
+			},
+			"description": "Astro AI X is your all‑in‑one mobile AI studio to chat, write, code, and summarize with lightning‑fast streaming and a beautiful, accessible UX.",
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.8",
+				"ratingCount": "5000"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "Astro AI X",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://astro-ai.net/logo/spaceman.png"
+				}
+			}
+		}
+		</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ9SK88B5W"></script><script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-ZJ9SK88B5W");</script><link rel="stylesheet" href="/_astro/ai-agents-vs-traditional-chatbots.DRFgoCwK.css">
+<style>.blog-content[data-astro-cid-2q5oecfc]{color:#fff;max-width:100%;line-height:1.6}.blog-content[data-astro-cid-2q5oecfc] h1{font-size:2rem;font-weight:700;margin-bottom:1.5rem;margin-top:2.5rem}.blog-content[data-astro-cid-2q5oecfc] h2{font-size:1.5rem;font-weight:700;margin-bottom:1.25rem;margin-top:2.5rem}.blog-content[data-astro-cid-2q5oecfc] h3{font-size:1.25rem;font-weight:700;margin-bottom:1rem;margin-top:2rem}.blog-content[data-astro-cid-2q5oecfc] h4{font-size:1.125rem;font-weight:700;margin-bottom:.75rem;margin-top:1.5rem}.blog-content[data-astro-cid-2q5oecfc] p{margin-bottom:1.5rem;line-height:1.8}.blog-content[data-astro-cid-2q5oecfc] a{color:#8b9cff;text-decoration:underline;text-underline-offset:3px}.blog-content[data-astro-cid-2q5oecfc] a:hover{color:#a9b6ff}.blog-content[data-astro-cid-2q5oecfc] ul,.blog-content[data-astro-cid-2q5oecfc] ol{margin:1.5rem 0 1.5rem 1.5rem;padding-left:1.25rem}.blog-content[data-astro-cid-2q5oecfc] li{margin-bottom:.75rem;line-height:1.6}.blog-content[data-astro-cid-2q5oecfc] ul{list-style:disc}.blog-content[data-astro-cid-2q5oecfc] ol{list-style:decimal}.blog-content[data-astro-cid-2q5oecfc] code{background:#111827;border:1px solid #1f2937;padding:.15rem .35rem;border-radius:.375rem;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:.95em}.blog-content[data-astro-cid-2q5oecfc] pre{background:#0b1220;border:1px solid #1f2937;border-radius:.5rem;padding:1rem;overflow:auto;margin:1.25rem 0}.blog-content[data-astro-cid-2q5oecfc] pre code{background:transparent;border:0;padding:0;white-space:pre;display:block}.blog-content[data-astro-cid-2q5oecfc] strong{font-weight:700}.blog-content[data-astro-cid-2q5oecfc] em{font-style:italic}.blog-content[data-astro-cid-2q5oecfc] blockquote{border-left:4px solid #6366f1;padding-left:1rem;margin-left:0;margin-right:0;font-style:italic;color:#d1d5db;background:linear-gradient(90deg,#6366f114,#11182700 60%)}.blog-content[data-astro-cid-2q5oecfc] hr{border:0;border-top:1px solid #1f2937;margin:2rem 0}.blog-content[data-astro-cid-2q5oecfc] img{border-radius:.5rem;margin:1.25rem 0}.blog-content[data-astro-cid-2q5oecfc] figure{margin:1.5rem 0;text-align:center}.blog-content[data-astro-cid-2q5oecfc] figcaption{font-size:.9rem;color:#9ca3af;margin-top:.5rem}.blog-content[data-astro-cid-2q5oecfc] table{width:100%;border-collapse:collapse;margin:1.5rem 0}.blog-content[data-astro-cid-2q5oecfc] th,.blog-content[data-astro-cid-2q5oecfc] td{border:1px solid #1f2937;padding:.75rem;text-align:left}.blog-content[data-astro-cid-2q5oecfc] th{background:#0f172a;font-weight:600}
+</style></head> <body>  <div class="min-h-screen bg-dark" data-astro-cid-2q5oecfc> <header class="py-6"> <div class="container-custom"> <div class="flex items-center justify-between"> <a href="/" class="flex items-center gap-2" aria-label="Go to homepage"> <div class="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 overflow-hidden rounded-full flex items-center justify-center"> <img src="/logo/spaceman.png" alt="Astro AI Logo" class="w-full h-full object-cover"> </div> <span class="text-xl font-bold">Astro AI X</span> </a> <nav class="hidden md:flex items-center gap-8"> <a href="/#features" class="text-gray-300 hover:text-white transition-colors">Features</a> <a href="/#how-it-works" class="text-gray-300 hover:text-white transition-colors">How it works</a> <a href="/#pricing" class="text-gray-300 hover:text-white transition-colors">Pricing</a> <a href="/blog" class="text-gray-300 hover:text-white transition-colors">Blog</a> </nav> <div class="flex items-center gap-4"> <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+Download on iOS
+</a> <button id="menu-toggle" class="block md:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path> </svg> </button> </div> </div> <!-- Mobile menu --> <div id="mobile-menu" class="md:hidden hidden mt-4 border-t border-gray-800 pt-4"> <nav class="flex flex-col gap-4"> <a href="/#features" class="text-gray-300 hover:text-white transition-colors">Features</a> <a href="/#how-it-works" class="text-gray-300 hover:text-white transition-colors">How it works</a> <a href="/#pricing" class="text-gray-300 hover:text-white transition-colors">Pricing</a> <a href="/blog" class="text-gray-300 hover:text-white transition-colors">Blog</a> <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="btn btn-primary w-full text-center mt-2" target="_blank" rel="noopener noreferrer">Download on iOS</a> </nav> </div> </div> </header> <script type="module">const n=document.getElementById("menu-toggle"),e=document.getElementById("mobile-menu");if(n&&e){const d=()=>{const t=e.classList.toggle("hidden")===!1;n.setAttribute("aria-expanded",String(t))};n.addEventListener("click",d),e.addEventListener("click",t=>{const s=t.target;s&&s.tagName==="A"&&(e.classList.contains("hidden")||(e.classList.add("hidden"),n.setAttribute("aria-expanded","false")))}),document.addEventListener("keydown",t=>{t.key==="Escape"&&!e.classList.contains("hidden")&&(e.classList.add("hidden"),n.setAttribute("aria-expanded","false"))})}</script> <main data-astro-cid-2q5oecfc> <div class="container-custom py-16 max-w-4xl" data-astro-cid-2q5oecfc> <div class="mb-8" data-astro-cid-2q5oecfc> <a href="/blog" class="text-primary hover:text-primary/80 flex items-center gap-2 mb-6" data-astro-cid-2q5oecfc> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16" data-astro-cid-2q5oecfc> <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" data-astro-cid-2q5oecfc></path> </svg>
+Back to Blog
+</a> <h1 class="text-3xl md:text-4xl font-bold mb-4" data-astro-cid-2q5oecfc> The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank </h1> <div class="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-6" data-astro-cid-2q5oecfc> <div class="flex items-center gap-2" data-astro-cid-2q5oecfc> <img src="/logo/spaceman.png" alt="Astro AI Team" class="w-6 h-6 rounded-full object-cover" data-astro-cid-2q5oecfc> <span data-astro-cid-2q5oecfc>Astro AI Team</span> </div> <span data-astro-cid-2q5oecfc>•</span> <span data-astro-cid-2q5oecfc>September 2, 2025</span> <span data-astro-cid-2q5oecfc>•</span> <div class="flex gap-2" data-astro-cid-2q5oecfc> <span class="inline-flex items-center text-xs px-2 py-0.5 leading-none bg-primary/20 text-primary rounded-full" data-astro-cid-2q5oecfc>LLM</span><span class="inline-flex items-center text-xs px-2 py-0.5 leading-none bg-primary/20 text-primary rounded-full" data-astro-cid-2q5oecfc>Token Costs</span><span class="inline-flex items-center text-xs px-2 py-0.5 leading-none bg-primary/20 text-primary rounded-full" data-astro-cid-2q5oecfc>Prompt Engineering</span><span class="inline-flex items-center text-xs px-2 py-0.5 leading-none bg-primary/20 text-primary rounded-full" data-astro-cid-2q5oecfc>Caching</span><span class="inline-flex items-center text-xs px-2 py-0.5 leading-none bg-primary/20 text-primary rounded-full" data-astro-cid-2q5oecfc>RAG</span> </div> </div> <div class="aspect-video bg-gray-800 rounded-xl overflow-hidden mb-10 w-full" data-astro-cid-2q5oecfc> <img src="/assets/digital-world.jpg" alt="The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank" class="w-full h-full object-cover" data-astro-cid-2q5oecfc> </div> </div> <article class="blog-content" data-astro-cid-2q5oecfc> <h1 id="the-cost-of-context-how-to-optimize-llm-usage-without-breaking-the-bank">The Cost of Context: How to Optimize LLM Usage Without Breaking the Bank</h1>
+<p>Large Language Models are incredible at reasoning with context: emails, docs, notes, knowledge bases. But that context is not free—every token you send (and receive) is billed. For teams and individuals experimenting with AI assistants, costs can rise quietly and then all at once.</p>
+<p>This guide shows how to control spend without sacrificing quality. It’s the pragmatic playbook we use when building and operating AI assistants.</p>
+<h2 id="the-three-levers-of-llm-cost">The Three Levers of LLM Cost</h2>
+<ul>
+<li><strong>Input tokens (prompt/context)</strong>
+<ul>
+<li>Everything you send to the model: system prompt, instructions, history, files.</li>
+</ul>
+</li>
+<li><strong>Output tokens (response)</strong>
+<ul>
+<li>The model’s reply length; often overlooked but meaningful in summaries and drafts.</li>
+</ul>
+</li>
+<li><strong>Model choice</strong>
+<ul>
+<li>Larger models often cost more per token. Smaller or distilled models are cheaper and can be just as effective with the right context strategy.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Aim to reduce tokens before you change models. Great context discipline multiplies the savings of every other change.</p>
+</blockquote>
+<h2 id="a-cost-aware-prompt-stack">A Cost-Aware Prompt Stack</h2>
+<ul>
+<li><strong>Right-size the system prompt</strong>
+<ul>
+<li>Keep permanent rules compact. Move situational instructions into the user prompt.</li>
+<li>Externalize long policies (e.g., privacy, tone) as short references or IDs.</li>
+</ul>
+</li>
+<li><strong>Structured inputs over storytelling</strong>
+<ul>
+<li>Use bullet lists, headings, and key-value fields. Fewer tokens, clearer intent.</li>
+</ul>
+</li>
+<li><strong>Response constraints</strong>
+<ul>
+<li>Set explicit limits: word counts, JSON schemas, or “return only keys present”.</li>
+</ul>
+</li>
+</ul>
+<p>Example constraint:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "summary"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"&#x3C;=120 words"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  "tasks"</span><span style="color:#E1E4E8">: [ {</span><span style="color:#79B8FF">"title"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"string"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">"due"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"ISO8601?"</span><span style="color:#E1E4E8">} ],</span></span>
+<span class="line"><span style="color:#79B8FF">  "next_action"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"one_of: [email, schedule, draft]"</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h2 id="context-budgeting-send-only-what-matters">Context Budgeting: Send Only What Matters</h2>
+<ul>
+<li><strong>Truncate conversation history</strong>
+<ul>
+<li>Keep the last N turns or compress older turns into a short state summary.</li>
+</ul>
+</li>
+<li><strong>Semantic retrieval (RAG)</strong>
+<ul>
+<li>Index knowledge and fetch only the top-k relevant chunks (e.g., k=3–6) instead of entire docs.</li>
+</ul>
+</li>
+<li><strong>Task-specific reducers</strong>
+<ul>
+<li>For emails, keep subject + the last thread turn; for docs, keep headings + relevant section.</li>
+</ul>
+</li>
+<li><strong>Window caps</strong>
+<ul>
+<li>Set a hard token ceiling per request (e.g., 8k). Drop or summarize excess before sending.</li>
+</ul>
+</li>
+</ul>
+<h2 id="summarize-to-save-without-losing-fidelity">Summarize to Save (Without Losing Fidelity)</h2>
+<ul>
+<li><strong>Rolling summaries</strong>
+<ul>
+<li>After each few turns, ask the model to produce a brief “state” object capturing decisions, entities, and pending tasks. Use that instead of raw history.</li>
+</ul>
+</li>
+<li><strong>Hierarchical notes</strong>
+<ul>
+<li>Summarize a folder into file summaries, and files into section summaries. Retrieve at the smallest useful level.</li>
+</ul>
+</li>
+<li><strong>Loss-aware compression</strong>
+<ul>
+<li>Tag what cannot be compressed (numbers, quotes, legal text). Summarize everything else.</li>
+</ul>
+</li>
+</ul>
+<h2 id="caching-your-cost-multiplier">Caching: Your Cost Multiplier</h2>
+<ul>
+<li><strong>Prompt+context cache</strong>
+<ul>
+<li>If inputs are identical or near-identical, reuse the last response. Hash normalized prompts.</li>
+</ul>
+</li>
+<li><strong>Tool result cache</strong>
+<ul>
+<li>Cache expensive tool calls (search, vector queries, calendar reads) with TTLs.</li>
+</ul>
+</li>
+<li><strong>Intermediate steps</strong>
+<ul>
+<li>For multi-step agents, cache sub-results (e.g., entity extraction) and reuse across runs.</li>
+</ul>
+</li>
+</ul>
+<p>Tip: Track cache hit rate per route. A 30–60% hit rate is common and translates directly into savings.</p>
+<h2 id="choose-the-right-model-for-each-step">Choose the Right Model for Each Step</h2>
+<ul>
+<li><strong>Decompose the workflow</strong>
+<ul>
+<li>Not every step needs the largest model. Try:
+<ul>
+<li>Routing/classification: small model</li>
+<li>Retrieval/query drafting: small/medium</li>
+<li>Final synthesis/checks: medium/large when needed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Calibration runs</strong>
+<ul>
+<li>Measure quality vs. cost across candidates using a fixed eval set (20–50 tasks is enough to compare).</li>
+</ul>
+</li>
+</ul>
+<h2 id="output-discipline">Output Discipline</h2>
+<ul>
+<li><strong>Short, useful answers</strong>
+<ul>
+<li>Ask for “bullets, not paragraphs”, or a strict JSON schema. Reward brevity.</li>
+</ul>
+</li>
+<li><strong>Stop sequences</strong>
+<ul>
+<li>Use stop tokens to cut rambling.</li>
+</ul>
+</li>
+<li><strong>Two-pass draft → prune</strong>
+<ul>
+<li>Generate a long draft once, then prune to &#x3C;30% length for the final user-facing output.</li>
+</ul>
+</li>
+</ul>
+<h2 id="guardrails-against-runaway-costs">Guardrails Against Runaway Costs</h2>
+<ul>
+<li><strong>Max token quotas</strong> per user/team/day; reject or degrade gracefully.</li>
+<li><strong>Backpressure</strong> when the queue grows; defer non-urgent tasks.</li>
+<li><strong>Timeouts &#x26; retries</strong> tuned to your provider; avoid infinite loops in agents.</li>
+</ul>
+<h2 id="a-simple-cost-calculator-back-of-the-envelope">A Simple Cost Calculator (Back-of-the-Envelope)</h2>
+<p>Let:</p>
+<ul>
+<li>p = input tokens per request</li>
+<li>r = output tokens per request</li>
+<li>c_in, c_out = $/1K tokens for your model</li>
+<li>n = requests per day</li>
+</ul>
+<p>Daily cost ≈ n × [(p/1000) × c_in + (r/1000) × c_out]</p>
+<p>Reduce p and r by 30% each and you’ll often cut spend by ~50% when combined with caching.</p>
+<h2 id="real-world-playbook-order-of-operations">Real-World Playbook (Order of Operations)</h2>
+<ol>
+<li>Baseline metrics: avg p, r, model mix, n, cache hit rate.</li>
+<li>Add response constraints and JSON outputs.</li>
+<li>Introduce retrieval (k=4) and drop conversation history >2 turns.</li>
+<li>Add rolling summaries; cap window at 8k.</li>
+<li>Implement prompt and tool-result caching.</li>
+<li>Split workflow across small/medium/large models.</li>
+<li>Tune k, ceilings, and stop sequences; iterate.</li>
+</ol>
+<h2 id="what-this-looks-like-in-an-ai-assistant">What This Looks Like in an AI Assistant</h2>
+<ul>
+<li>Email triage: keep subject + last turn; cache templates; generate 120-word drafts max.</li>
+<li>Meeting notes: retrieve agenda + action items schema; summarize recording → 5 bullets.</li>
+<li>Document Q&#x26;A: retrieve 4 chunks (512–1024 tokens each); answer in 150 words + citations.</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>Context is a superpower—and a line item. Treat it like a budget.</li>
+<li>Retrieval and summaries beat giant prompts.</li>
+<li>Caching and right-sized models multiply savings.</li>
+<li>Guardrails prevent surprise bills.</li>
+</ul>
+<p>If you want a cost-aware, reliable personal AI assistant, try Astro AI and download the iOS app: <a href="https://apps.apple.com/us/app/astroai-x/id6748281772">Download on iOS</a>.</p>
+<hr>
+<p>Want more articles like this? Explore the rest of our posts on the <a href="/blog">Astro AI Blog</a>.</p> </article> <!-- BlogPosting structured data --> <script type="application/ld+json">{JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": pageUrl,
+      "headline": frontmatter.title,
+      "description": description,
+      "image": imageUrl ? [imageUrl] : undefined,
+      "author": {
+        "@type": "Person",
+        "name": frontmatter.author || "Astro AI X Team"
+      },
+      "datePublished": frontmatter.date,
+      "dateModified": frontmatter.updated || frontmatter.date,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Astro AI X",
+        "logo": {
+          "@type": "ImageObject",
+          "url": new URL('/logo/spaceman.png', site).toString()
+        }
+      }
+    })}</script>  <div class="mt-16 border-t border-gray-800 pt-8" data-astro-cid-2q5oecfc> <h3 class="text-xl font-bold mb-4" data-astro-cid-2q5oecfc>Continue Reading</h3> <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-astro-cid-2q5oecfc> <a href="/blog" class="p-6 bg-dark-light rounded-xl hover:bg-gray-800 transition-colors" data-astro-cid-2q5oecfc> <h4 class="font-bold mb-2" data-astro-cid-2q5oecfc>Discover more articles</h4> <p class="text-sm text-gray-400" data-astro-cid-2q5oecfc>Browse our full collection of AI insights and tutorials</p> </a> <a href="https://apps.apple.com/us/app/astroai-x/id6748281772" class="p-6 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors" data-astro-cid-2q5oecfc> <h4 class="font-bold mb-2" data-astro-cid-2q5oecfc>Download on iOS</h4> <p class="text-sm text-gray-400" data-astro-cid-2q5oecfc>Get Astro AI X from the App Store and start creating</p> </a> </div> </div> </div></main> <footer class="bg-dark-light pt-16 pb-10"> <div class="container-custom"> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"> <div> <div class="flex items-center gap-2 mb-6"> <div class="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 overflow-hidden rounded-full flex items-center justify-center"> <img src="/logo/spaceman.png" alt="Astro AI Logo" class="w-full h-full object-cover"> </div> <span class="text-xl font-bold">Astro AI X</span> </div> <p class="text-gray-300 mb-4">
+All Your Preferred AI Models in One Conversation for the Cost of a Single ChatGPT Subscription
+</p> <div class="flex gap-4"> <a href="https://www.facebook.com/profile.php?id=61581254270280" aria-label="Facebook" class="text-gray-400 hover:text-primary" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M22.675 0h-21.35C.595 0 0 .595 0 1.326v21.348C0 23.405.595 24 1.326 24H12.82v-9.294H9.692V11.11h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.314h3.592l-.468 3.596h-3.124V24h6.127C23.405 24 24 23.405 24 22.674V1.326C24 .595 23.405 0 22.675 0z"></path> </svg> </a> <a href="https://x.com/AstroAi2077" aria-label="Twitter / X" class="text-gray-400 hover:text-primary" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M18.244 2H22L14.85 10.34 23.5 22h-6.31l-4.64-6-5.12 6H2l8.53-10.0L2.9 2h6.31l4.29 5.57L18.244 2z"></path> </svg> </a> <a href="https://www.instagram.com/astroai2077/?hl=en" aria-label="Instagram" class="text-gray-400 hover:text-primary" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.51 5.51 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm5.75-3.25a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"></path> </svg> </a> </div> </div> <div> <h3 class="text-lg font-semibold mb-4">Product</h3> <ul class="space-y-2"> <li><a href="/#features" class="text-gray-400 hover:text-primary">Features</a></li> <li><a href="/#how-it-works" class="text-gray-400 hover:text-primary">How It Works</a></li> <li><a href="/#pricing" class="text-gray-400 hover:text-primary">Pricing</a></li> <li><a href="#" class="text-gray-400 hover:text-primary">Support</a></li> <li><a href="#" class="text-gray-400 hover:text-primary">Contact</a></li> </ul> </div> <div> <h3 class="text-lg font-semibold mb-4">Company</h3> <ul class="space-y-2"> <li><a href="/blog" class="text-gray-400 hover:text-primary">Blog</a></li> <li><a href="#" class="text-gray-400 hover:text-primary">Contact</a></li> </ul> </div> <div> <h3 class="text-lg font-semibold mb-4">Legal</h3> <ul class="space-y-2"> <li><a href="#" class="text-gray-400 hover:text-primary">Terms of Service</a></li> <li><a href="/privacy-policy" class="text-gray-400 hover:text-primary">Privacy Policy</a></li> <li><a href="#" class="text-gray-400 hover:text-primary">Contact</a></li> </ul> </div> </div> <div class="border-t border-gray-700 pt-8"> <p class="text-center text-gray-400 text-sm">
+&copy; 2026 Astro AI X. All rights reserved.
+</p> </div> </div> </footer> </div>  </body></html>
