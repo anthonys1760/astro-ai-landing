@@ -14,6 +14,9 @@ const imageMap: Record<string, any> = {
   'on-device-ai': onDeviceImage,
 };
 
+// Default Unsplash fallback for posts without an image
+const unsplashFallback = 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&h=900&fit=crop&q=80';
+
 // Dynamically load blog posts from markdown files in this directory
 const modules = import.meta.glob('./*.md');
 const posts = (
@@ -73,15 +76,23 @@ const posts = (
                 alt={post.title}
                 class="w-full h-full object-cover"
               />
+            ) : /^https?:\/\//i.test(post.image || unsplashFallback) ? (
+              <img
+                src={post.image || unsplashFallback}
+                alt={post.title}
+                class="w-full h-full object-cover"
+                loading="lazy" />
             ) : post.image && /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(post.image) ? (
-              <img 
+              <img
                 src={`/assets/${post.image}`}
                 alt={post.title}
                 class="w-full h-full object-cover" />
             ) : (
-              <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
-                <span class="text-2xl">🖼️</span>
-              </div>
+              <img
+                src={unsplashFallback}
+                alt={post.title}
+                class="w-full h-full object-cover"
+                loading="lazy" />
             )}
           </div>
           

@@ -4,7 +4,7 @@ title: "Prompt Engineering for Non-Technical Users: Get Better Answers from AI"
 author: "Astro AI Team"
 date: "April 02, 2026"
 emoji: "✍️"
-image: ""
+image: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1600&h=900&fit=crop&q=80"
 tags:
   - Prompt Engineering
   - AI Tools

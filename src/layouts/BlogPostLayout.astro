@@ -23,15 +23,23 @@ const imageMap = {
   'on-device-ai': onDeviceImage,
 };
 
+// Default Unsplash fallback for posts without an image
+const unsplashFallback = 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&h=900&fit=crop&q=80';
+
+// Resolve the display image: frontmatter value or Unsplash fallback
+const resolvedImage = frontmatter.image || unsplashFallback;
+
 // Build absolute URLs for page and image for structured data
 const site = Astro.site?.href || 'https://astro-ai.net/';
 const pageUrl = new URL(Astro.url.pathname, site).toString();
-const imageUrl = frontmatter.image
-  ? (imageMap[frontmatter.image]?.src
-      ? new URL(imageMap[frontmatter.image].src, site).toString()
-      : (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image)
-          ? new URL(`/assets/${frontmatter.image}`, site).toString()
-          : undefined))
+const imageUrl = resolvedImage
+  ? (imageMap[resolvedImage]?.src
+      ? new URL(imageMap[resolvedImage].src, site).toString()
+      : /^https?:\/\//i.test(resolvedImage)
+        ? resolvedImage
+        : /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(resolvedImage)
+          ? new URL(`/assets/${resolvedImage}`, site).toString()
+          : undefined)
   : undefined;
 ---
 
@@ -68,15 +76,21 @@ const imageUrl = frontmatter.image
       </div>
       
       <div class="aspect-video bg-gray-800 rounded-xl overflow-hidden mb-10 w-full">
-        {frontmatter.image && imageMap[frontmatter.image] ? (
-          <Image 
-            src={imageMap[frontmatter.image]} 
-            alt={frontmatter.title} 
+        {imageMap[resolvedImage] ? (
+          <Image
+            src={imageMap[resolvedImage]}
+            alt={frontmatter.title}
             class="w-full h-full object-cover"
           />
-        ) : frontmatter.image && /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image) ? (
-          <img 
-            src={`/assets/${frontmatter.image}`}
+        ) : /^https?:\/\//i.test(resolvedImage) ? (
+          <img
+            src={resolvedImage}
+            alt={frontmatter.title}
+            class="w-full h-full object-cover"
+            loading="lazy" />
+        ) : /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(resolvedImage) ? (
+          <img
+            src={`/assets/${resolvedImage}`}
             alt={frontmatter.title}
             class="w-full h-full object-cover" />
         ) : (
