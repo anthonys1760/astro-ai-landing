@@ -7,9 +7,6 @@ import { Image } from 'astro:assets';
 // Import featured image for the blog post
 import astronautImage from '../assets/astronaut-in-space.jpg';
 import onDeviceImage from '../assets/on-device-ai.jpg';
-import upskillImage from '../assets/upskill-learning.jpg';
-import promptEngImage from '../assets/prompt-engineering.jpg';
-import personalFinanceImage from '../assets/personal-finance.jpg';
 
 const { frontmatter } = Astro.props;
 
@@ -24,9 +21,6 @@ const description = frontmatter.description || frontmatter.excerpt || `Read ${fr
 const imageMap = {
   'astronaut-in-space': astronautImage,
   'on-device-ai': onDeviceImage,
-  'upskill-learning': upskillImage,
-  'prompt-engineering': promptEngImage,
-  'personal-finance': personalFinanceImage,
 };
 
 // Build absolute URLs for page and image for structured data
@@ -35,11 +29,9 @@ const pageUrl = new URL(Astro.url.pathname, site).toString();
 const imageUrl = frontmatter.image
   ? (imageMap[frontmatter.image]?.src
       ? new URL(imageMap[frontmatter.image].src, site).toString()
-      : /^https?:\/\//i.test(frontmatter.image)
-          ? frontmatter.image
-          : (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image)
-              ? new URL(`/assets/${frontmatter.image}`, site).toString()
-              : undefined))
+      : (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image)
+          ? new URL(`/assets/${frontmatter.image}`, site).toString()
+          : undefined))
   : undefined;
 ---
 
@@ -77,18 +69,13 @@ const imageUrl = frontmatter.image
       
       <div class="aspect-video bg-gray-800 rounded-xl overflow-hidden mb-10 w-full">
         {frontmatter.image && imageMap[frontmatter.image] ? (
-          <Image
-            src={imageMap[frontmatter.image]}
-            alt={frontmatter.title}
+          <Image 
+            src={imageMap[frontmatter.image]} 
+            alt={frontmatter.title} 
             class="w-full h-full object-cover"
           />
-        ) : frontmatter.image && /^https?:\/\//i.test(frontmatter.image) ? (
-          <img
-            src={frontmatter.image}
-            alt={frontmatter.title}
-            class="w-full h-full object-cover" />
         ) : frontmatter.image && /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(frontmatter.image) ? (
-          <img
+          <img 
             src={`/assets/${frontmatter.image}`}
             alt={frontmatter.title}
             class="w-full h-full object-cover" />
