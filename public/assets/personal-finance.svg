@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 750" width="1260" height="750">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#022c22"/>
+      <stop offset="50%" style="stop-color:#042f2e"/>
+      <stop offset="100%" style="stop-color:#021a12"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <linearGradient id="barFaint" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde68a"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <radialGradient id="greenHalo" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1260" height="750" fill="url(#bg3)"/>
+
+  <!-- Dot pattern -->
+  <pattern id="dots3" x="0" y="0" width="45" height="45" patternUnits="userSpaceOnUse">
+    <circle cx="22" cy="22" r="1" fill="#10b981" opacity="0.12"/>
+  </pattern>
+  <rect width="1260" height="750" fill="url(#dots3)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="630" cy="420" rx="520" ry="300" fill="url(#greenHalo)"/>
+  <ellipse cx="180" cy="580" rx="220" ry="150" fill="#059669" opacity="0.05"/>
+  <ellipse cx="1100" cy="200" rx="240" ry="160" fill="#10b981" opacity="0.05"/>
+
+  <!-- === Chart background panel === -->
+  <rect x="210" y="180" width="660" height="400" rx="16" fill="#021a0f" stroke="#065f46" stroke-width="1.5" opacity="0.9"/>
+  <!-- Chart area -->
+  <rect x="230" y="200" width="620" height="340" rx="8" fill="#031510"/>
+
+  <!-- Horizontal grid lines -->
+  <g stroke="#065f46" stroke-width="0.8" opacity="0.5">
+    <line x1="260" y1="480" x2="820" y2="480"/>
+    <line x1="260" y1="420" x2="820" y2="420"/>
+    <line x1="260" y1="360" x2="820" y2="360"/>
+    <line x1="260" y1="300" x2="820" y2="300"/>
+    <line x1="260" y1="240" x2="820" y2="240"/>
+  </g>
+
+  <!-- Y axis labels -->
+  <g fill="#6ee7b7" font-size="11" opacity="0.5" font-family="monospace">
+    <text x="243" y="484">0</text>
+    <text x="235" y="424">20k</text>
+    <text x="235" y="364">40k</text>
+    <text x="235" y="304">60k</text>
+    <text x="235" y="244">80k</text>
+  </g>
+
+  <!-- === Bar chart bars === -->
+  <!-- Bar 1 (short) -->
+  <rect x="278" y="420" width="55" height="60" rx="4" fill="url(#barFaint)"/>
+  <!-- Bar 2 -->
+  <rect x="363" y="390" width="55" height="90" rx="4" fill="url(#barFaint)"/>
+  <!-- Bar 3 -->
+  <rect x="448" y="360" width="55" height="120" rx="4" fill="url(#bar1)" filter="url(#softglow3)"/>
+  <!-- Bar 4 -->
+  <rect x="533" y="320" width="55" height="160" rx="4" fill="url(#bar1)" filter="url(#softglow3)"/>
+  <!-- Bar 5 (tallest, highlighted) -->
+  <rect x="618" y="260" width="55" height="220" rx="4" fill="url(#bar2)" filter="url(#glow3)"/>
+  <!-- Bar 6 (projected, lighter) -->
+  <rect x="703" y="230" width="55" height="250" rx="4" fill="url(#bar1)" opacity="0.6" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Bar top highlights -->
+  <rect x="618" y="260" width="55" height="8" rx="4" fill="#a7f3d0" opacity="0.5"/>
+  <rect x="533" y="320" width="55" height="6" rx="3" fill="#a7f3d0" opacity="0.3"/>
+
+  <!-- X-axis baseline -->
+  <line x1="260" y1="480" x2="820" y2="480" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+
+  <!-- === Trend line over bars === -->
+  <polyline
+    points="305,440 390,415 475,380 560,340 645,275 730,248"
+    stroke="#34d399"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow3)"
+  />
+  <!-- Trend line dots -->
+  <circle cx="305" cy="440" r="5" fill="#34d399" filter="url(#softglow3)"/>
+  <circle cx="390" cy="415" r="5" fill="#34d399" filter="url(#softglow3)"/>
+  <circle cx="475" cy="380" r="5" fill="#34d399" filter="url(#softglow3)"/>
+  <circle cx="560" cy="340" r="5" fill="#34d399" filter="url(#softglow3)"/>
+  <circle cx="645" cy="275" r="6" fill="#6ee7b7" filter="url(#glow3)"/>
+  <circle cx="730" cy="248" r="5" fill="#34d399" stroke="#6ee7b7" stroke-width="2" filter="url(#glow3)"/>
+
+  <!-- Value tooltip at peak -->
+  <rect x="648" y="240" width="75" height="26" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+  <text x="663" y="258" fill="#6ee7b7" font-size="11" font-family="monospace" font-weight="bold">+34.8%</text>
+
+  <!-- === Coin / Dollar symbol (right) === -->
+  <g transform="translate(940, 280)" filter="url(#glow3)">
+    <!-- Outer coin rim -->
+    <circle cx="90" cy="90" r="88" fill="#78350f" opacity="0.4"/>
+    <!-- Main coin face -->
+    <circle cx="90" cy="90" r="80" fill="url(#coinGrad)"/>
+    <!-- Inner ring -->
+    <circle cx="90" cy="90" r="72" fill="none" stroke="#fde68a" stroke-width="2" opacity="0.5"/>
+    <!-- Coin sheen -->
+    <ellipse cx="72" cy="65" rx="22" ry="30" fill="#fff" opacity="0.15" transform="rotate(-20 72 65)"/>
+    <!-- Dollar sign -->
+    <text x="90" y="108" text-anchor="middle" font-size="72" font-weight="bold" fill="#78350f" font-family="serif" opacity="0.9">$</text>
+    <text x="90" y="108" text-anchor="middle" font-size="72" font-weight="bold" fill="#fef3c7" font-family="serif" opacity="0.7">$</text>
+  </g>
+
+  <!-- Upward arrows (right side decoration) -->
+  <g transform="translate(1080, 480)" opacity="0.5" filter="url(#softglow3)">
+    <polygon points="20,0 36,22 28,22 28,48 12,48 12,22 4,22" fill="#34d399"/>
+  </g>
+  <g transform="translate(1110, 520)" opacity="0.3" filter="url(#softglow3)">
+    <polygon points="14,0 26,16 20,16 20,36 8,36 8,16 2,16" fill="#6ee7b7"/>
+  </g>
+
+  <!-- Percentage badge top left of chart -->
+  <g transform="translate(150, 200)">
+    <rect width="110" height="52" rx="10" fill="#021f16" stroke="#059669" stroke-width="1.5"/>
+    <text x="55" y="22" text-anchor="middle" fill="#34d399" font-size="10" font-family="sans-serif" opacity="0.7">PORTFOLIO</text>
+    <text x="55" y="42" text-anchor="middle" fill="#6ee7b7" font-size="20" font-weight="bold" font-family="monospace">+28%</text>
+  </g>
+
+  <!-- Small stats bottom-left -->
+  <g transform="translate(55, 480)" opacity="0.6">
+    <rect width="130" height="70" rx="8" fill="#021a0f" stroke="#065f46" stroke-width="1"/>
+    <rect x="10" y="14" width="40" height="6" rx="3" fill="#059669"/>
+    <rect x="10" y="28" width="110" height="5" rx="2" fill="#6ee7b7" opacity="0.4"/>
+    <rect x="10" y="40" width="90" height="5" rx="2" fill="#6ee7b7" opacity="0.3"/>
+    <rect x="10" y="52" width="70" height="5" rx="2" fill="#34d399" opacity="0.5"/>
+  </g>
+
+  <!-- Sparkles / decorative -->
+  <g stroke="#34d399" stroke-width="1.5" opacity="0.45">
+    <line x1="155" y1="140" x2="155" y2="160"/>
+    <line x1="145" y1="150" x2="165" y2="150"/>
+    <line x1="148" y1="143" x2="162" y2="157"/>
+    <line x1="162" y1="143" x2="148" y2="157"/>
+  </g>
+  <g stroke="#6ee7b7" stroke-width="1.5" opacity="0.35">
+    <line x1="1120" y1="620" x2="1120" y2="636"/>
+    <line x1="1112" y1="628" x2="1128" y2="628"/>
+  </g>
+
+  <!-- Corner brackets -->
+  <path d="M 30 30 L 70 30 L 70 34 L 34 34 L 34 70 L 30 70 Z" fill="#10b981" opacity="0.25"/>
+  <path d="M 1230 30 L 1190 30 L 1190 34 L 1226 34 L 1226 70 L 1230 70 Z" fill="#10b981" opacity="0.25"/>
+  <path d="M 30 720 L 70 720 L 70 716 L 34 716 L 34 680 L 30 680 Z" fill="#10b981" opacity="0.18"/>
+  <path d="M 1230 720 L 1190 720 L 1190 716 L 1226 716 L 1226 680 L 1230 680 Z" fill="#10b981" opacity="0.18"/>
+</svg>

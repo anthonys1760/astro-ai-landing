@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 750" width="1260" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#1a1060"/>
+      <stop offset="100%" style="stop-color:#0d1b3e"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4338ca"/>
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1260" height="750" fill="url(#bg)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#6366f1" opacity="0.15"/>
+  </pattern>
+  <rect width="1260" height="750" fill="url(#dots)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="250" cy="200" rx="300" ry="200" fill="#6366f1" opacity="0.07"/>
+  <ellipse cx="1050" cy="580" rx="280" ry="180" fill="#8b5cf6" opacity="0.08"/>
+  <ellipse cx="630" cy="375" rx="350" ry="250" fill="#4338ca" opacity="0.05"/>
+
+  <!-- === Open Book (center) === -->
+  <!-- Book shadow -->
+  <ellipse cx="630" cy="520" rx="180" ry="20" fill="#000" opacity="0.3"/>
+
+  <!-- Left page -->
+  <path d="M 440 300 C 440 290 450 285 460 285 L 615 285 L 615 490 L 460 490 C 450 490 440 485 440 475 Z" fill="url(#pageGrad)" opacity="0.95"/>
+  <!-- Left page lines -->
+  <line x1="465" y1="315" x2="595" y2="315" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="335" x2="595" y2="335" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="355" x2="580" y2="355" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="375" x2="595" y2="375" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="395" x2="570" y2="395" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="415" x2="595" y2="415" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="435" x2="560" y2="435" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="455" x2="595" y2="455" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+
+  <!-- Right page -->
+  <path d="M 820 300 C 820 290 810 285 800 285 L 645 285 L 645 490 L 800 490 C 810 490 820 485 820 475 Z" fill="url(#pageGrad)" opacity="0.9"/>
+  <!-- Right page lines -->
+  <line x1="665" y1="315" x2="795" y2="315" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="665" y1="335" x2="790" y2="335" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="665" y1="355" x2="795" y2="355" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="665" y1="375" x2="775" y2="375" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="665" y1="395" x2="795" y2="395" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <line x1="665" y1="415" x2="780" y2="415" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+  <!-- Right page has a small glowing chart sketch -->
+  <polyline points="670,460 695,440 720,450 750,425 780,405 790,415" stroke="#6366f1" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <circle cx="790" cy="415" r="4" fill="#818cf8"/>
+
+  <!-- Book spine -->
+  <rect x="615" y="280" width="30" height="215" rx="3" fill="url(#bookGrad)"/>
+  <!-- Spine highlight -->
+  <rect x="618" y="280" width="5" height="215" rx="2" fill="#818cf8" opacity="0.4"/>
+
+  <!-- Book cover bottom fold -->
+  <path d="M 440 480 L 440 500 C 440 510 450 515 460 515 L 615 510 L 615 490 Z" fill="#3730a3" opacity="0.7"/>
+  <path d="M 820 480 L 820 500 C 820 510 810 515 800 515 L 645 510 L 645 490 Z" fill="#3730a3" opacity="0.6"/>
+
+  <!-- === Lightbulb above book === -->
+  <!-- Glow halo -->
+  <circle cx="630" cy="175" r="80" fill="url(#bulbGlow)"/>
+
+  <!-- Bulb glass -->
+  <ellipse cx="630" cy="165" rx="38" ry="42" fill="#fde68a" opacity="0.9" filter="url(#glow)"/>
+  <ellipse cx="618" cy="152" rx="10" ry="14" fill="#fff" opacity="0.4"/>
+
+  <!-- Bulb base -->
+  <rect x="613" y="204" width="34" height="8" rx="2" fill="#d97706"/>
+  <rect x="616" y="212" width="28" height="6" rx="2" fill="#b45309"/>
+  <rect x="619" y="218" width="22" height="5" rx="2" fill="#92400e"/>
+
+  <!-- Rays -->
+  <g stroke="#fde68a" stroke-width="2.5" opacity="0.7" filter="url(#softglow)">
+    <line x1="630" y1="110" x2="630" y2="95"/>
+    <line x1="670" y1="122" x2="681" y2="111"/>
+    <line x1="683" y1="160" x2="700" y2="158"/>
+    <line x1="670" y1="198" x2="681" y2="210"/>
+    <line x1="590" y1="122" x2="579" y2="111"/>
+    <line x1="577" y1="160" x2="560" y2="158"/>
+    <line x1="590" y1="198" x2="579" y2="210"/>
+  </g>
+
+  <!-- === Floating accent icons (left side) === -->
+  <!-- Graduation cap -->
+  <g transform="translate(180, 280)" opacity="0.75" filter="url(#softglow)">
+    <polygon points="50,10 90,30 50,50 10,30" fill="#6366f1"/>
+    <rect x="80" y="28" width="4" height="25" fill="#6366f1"/>
+    <ellipse cx="82" cy="54" rx="7" ry="4" fill="#818cf8"/>
+    <rect x="22" y="30" width="56" height="18" rx="5" fill="#4338ca"/>
+  </g>
+
+  <!-- Sparkle top-left -->
+  <g transform="translate(140, 160)" opacity="0.6">
+    <line x1="12" y1="0" x2="12" y2="24" stroke="#818cf8" stroke-width="2"/>
+    <line x1="0" y1="12" x2="24" y2="12" stroke="#818cf8" stroke-width="2"/>
+    <line x1="3" y1="3" x2="21" y2="21" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="21" y1="3" x2="3" y2="21" stroke="#818cf8" stroke-width="1.5"/>
+  </g>
+
+  <!-- === Floating accent icons (right side) === -->
+  <!-- Upward arrow -->
+  <g transform="translate(980, 260)" opacity="0.7" filter="url(#softglow)">
+    <polygon points="35,0 60,35 45,35 45,70 25,70 25,35 10,35" fill="#6366f1"/>
+  </g>
+
+  <!-- Small star/sparkle right -->
+  <g transform="translate(1050, 160)" opacity="0.55">
+    <line x1="10" y1="0" x2="10" y2="20" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="0" y1="10" x2="20" y2="10" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="3" y1="3" x2="17" y2="17" stroke="#818cf8" stroke-width="1"/>
+    <line x1="17" y1="3" x2="3" y2="17" stroke="#818cf8" stroke-width="1"/>
+  </g>
+
+  <!-- Brain icon (simplified) -->
+  <g transform="translate(950, 390)" opacity="0.65" filter="url(#softglow)">
+    <path d="M 40,10 C 55,5 70,15 68,30 C 75,30 80,40 75,50 C 80,58 75,68 65,68 C 60,75 48,76 42,70 C 36,76 24,75 19,68 C 9,68 4,58 9,50 C 4,40 9,30 16,30 C 14,15 29,5 40,10 Z" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <line x1="40" y1="10" x2="40" y2="70" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 16,30 C 22,38 22,52 16,60" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M 64,30 C 58,38 58,52 64,60" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Bottom text label area glow -->
+  <rect x="0" y="660" width="1260" height="90" fill="url(#glowGrad)" opacity="0.3"/>
+
+  <!-- Decorative circles bottom corners -->
+  <circle cx="80" cy="700" r="40" stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.2"/>
+  <circle cx="80" cy="700" r="25" stroke="#6366f1" stroke-width="1" fill="none" opacity="0.15"/>
+  <circle cx="1180" cy="700" r="40" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.2"/>
+  <circle cx="1180" cy="700" r="25" stroke="#8b5cf6" stroke-width="1" fill="none" opacity="0.15"/>
+</svg>

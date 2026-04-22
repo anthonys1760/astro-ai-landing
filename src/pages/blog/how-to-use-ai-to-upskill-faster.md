@@ -4,7 +4,7 @@ title: "How to Use AI to Upskill Faster: Turn Your Phone into a Learning Machine
 author: "Astro AI Team"
 date: "April 13, 2026"
 emoji: "📚"
-image: ""
+image: "upskill-learning.svg"
 tags:
   - Learning
   - AI Tools
