@@ -7,6 +7,9 @@ import { Image } from 'astro:assets';
 // Import featured image for the blog post
 import astronautImage from '../assets/astronaut-in-space.jpg';
 import onDeviceImage from '../assets/on-device-ai.jpg';
+import upskillImage from '../assets/upskill-learning.jpg';
+import promptEngImage from '../assets/prompt-engineering.jpg';
+import personalFinanceImage from '../assets/personal-finance.jpg';
 
 const { frontmatter } = Astro.props;
 
@@ -21,6 +24,9 @@ const description = frontmatter.description || frontmatter.excerpt || `Read ${fr
 const imageMap = {
   'astronaut-in-space': astronautImage,
   'on-device-ai': onDeviceImage,
+  'upskill-learning': upskillImage,
+  'prompt-engineering': promptEngImage,
+  'personal-finance': personalFinanceImage,
 };
 
 // Build absolute URLs for page and image for structured data
