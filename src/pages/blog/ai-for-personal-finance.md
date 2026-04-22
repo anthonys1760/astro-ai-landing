@@ -4,7 +4,7 @@ title: "AI for Personal Finance: Manage Your Money More Intelligently"
 author: "Astro AI Team"
 date: "April 20, 2026"
 emoji: "💰"
-image: ""
+image: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 tags:
   - Personal Finance
   - AI Tools
